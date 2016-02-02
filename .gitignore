@@ -1,0 +1,14 @@
+*.o
+*.elf
+*.hex
+*.lss
+*.map
+*.srec
+Research/*.*
+*.zip
+*.jpg
+*.png
+*.gif
+*.bmp
+*.bak
+
