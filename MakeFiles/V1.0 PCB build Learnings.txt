@@ -1,0 +1,62 @@
+< Problem
+	*found
+	>solution
+
+
+< Didn't get 62K R's in mouser order. 
+	*missed in Mouser BOM, did not order
+	>added to std bom and fix bom
+
+< Didn't get 4v1 power supply
+	*missed in Mouser BOM, did not order
+	>added to std bom and fix bom
+
+< Didn't get 3x0.1 header
+	*missed in Mouser BOM, did not order
+	>added to std bom and fix bom
+
+< Simcard footprint wrong, 
+	*needs larger keepout area
+	> increased boundry lines in layout model
+ 
+	*ground shell
+	> Was grounded, no change 
+
+	*alignment pegs
+	> added pegs in layout model
+
+	*Found Part number refrence was wrong
+	>updated in model
+	>updated model in part assosciation file
+
+< USB micro footprint wrong, prongs, ground shell
+	*part/footpring not the same
+	> used data sheet to make a new part
+	> updated model in part assosciation file
+
+< USB-A, ground shell
+	>not actually a problem, no change
+
+47nF caps on BOM instead of 47nH 0603 inductors
+	*missed in Mouser BOM, did not order
+	>added to std bom and fix bom
+
+4.7uf caps are 0805 instead of 0603
+	*wrong in Mouser BOM
+	>added new to std bom and fix bom
+
+220ohm FB are 0805 instead of 0603
+	*wrong in Mouser BOM
+	>added new to std bom and fix bom
+
+serial connector footprint wrong, longer
+	*wrong size on board, can be hacked
+	>Created new part in library to match mouser BOM item
+
+D1 footprint wrong, way too big
+	*wasted PCB space
+	>changed model in part assosciation file
+
+RF connector footprint wrong, needs wider
+	*Model not correct
+	>used data sheet to fix model

@@ -1,0 +1,24 @@
+Circuit: * C:\Users\jbanks2\Documents\Projects\rvi_v2x_board\Hardware\Simulaton\Charge Pump.asc
+
+Direct Newton iteration for .op point succeeded.
+.step freq=20000
+.step freq=100000
+
+Date: Wed Oct 21 17:15:27 2015
+Total elapsed time: 2.217 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 553893
+traniter = 553883
+tranpoints = 209174
+accept = 157798
+rejected = 51376
+matrix size = 15
+fillins = 0
+solver = Normal
+Matrix Compiler1: 596 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: 1.01 KB object code size  0.1/0.1/[0.0]
+
+
