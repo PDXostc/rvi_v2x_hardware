@@ -1,0 +1,1896 @@
+EESchema Schematic File Version 2
+LIBS:V2X-rescue
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
+LIBS:CUSTOM_KICAD_PART
+LIBS:V2X-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title "V2X - Open source RVI over SMS daughter card"
+Date "2015-07-17"
+Rev "1.2"
+Comp "Jaguar Land Rover OSTC"
+Comment1 "Designer: Jesse Banks"
+Comment2 "Advisor: Rudolf Steif"
+Comment3 "Manager: Magnus Feuer"
+Comment4 ""
+$EndDescr
+$Comp
+L STN1110-RESCUE-V2X U7
+U 1 1 55A9EA92
+P 7550 1750
+F 0 "U7" H 7300 2300 60  0000 C CNN
+F 1 "STN1110" H 8450 700 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm" H 7550 1750 60  0001 C CNN
+F 3 "https://www.scantool.net/dev-tools/stn11xx/stn1110.html?utm_source=obdsol&utm_medium=btn&utm_campaign=stn1110-order" H 7550 1750 60  0001 C CNN
+	1    7550 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 1550 0    60   Input ~ 0
+PWM/~VPW
+Text GLabel 7100 1650 0    60   Input ~ 0
+~VPW_RX
+Text GLabel 7100 1750 0    60   Input ~ 0
+PWM_RX
+Text GLabel 7100 1850 0    60   Input ~ 0
+J1850_BUS_+_TX
+$Comp
+L GND #PWR019
+U 1 1 55A9EB78
+P 7100 2050
+F 0 "#PWR019" H 7100 1800 50  0001 C CNN
+F 1 "GND" V 7100 1850 50  0000 C CNN
+F 2 "" H 7100 2050 60  0000 C CNN
+F 3 "" H 7100 2050 60  0000 C CNN
+	1    7100 2050
+	0    1    1    0   
+$EndComp
+Text GLabel 7100 2650 0    60   Input ~ 0
+CAN_RX
+$Comp
+L GND #PWR020
+U 1 1 55A9F1D5
+P 9200 1100
+F 0 "#PWR020" H 9200 850 50  0001 C CNN
+F 1 "GND" H 9200 950 50  0000 C CNN
+F 2 "" H 9200 1100 60  0000 C CNN
+F 3 "" H 9200 1100 60  0000 C CNN
+	1    9200 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 1550 2    60   Input ~ 0
+ISO_L_TX
+Text GLabel 8800 1650 2    60   Input ~ 0
+ISO_K_TX
+$Comp
+L CONN_01X02 P5
+U 1 1 55AA08F9
+P 10400 2250
+F 0 "P5" H 10400 2400 50  0000 C CNN
+F 1 "NVM_RST" H 10500 2100 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" H 10400 2250 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/276/0022285023_PCB_HEADERS-159058.pdf" H 10400 2250 60  0001 C CNN
+F 4 "538-22-28-5023" H 10400 2250 60  0001 C CNN "Mouse PN"
+	1    10400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 55AA095B
+P 10200 2400
+F 0 "#PWR021" H 10200 2150 50  0001 C CNN
+F 1 "GND" H 10200 2250 50  0000 C CNN
+F 2 "" H 10200 2400 60  0000 C CNN
+F 3 "" H 10200 2400 60  0000 C CNN
+	1    10200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R41
+U 1 1 55AA1169
+P 9950 4400
+F 0 "R41" V 10030 4400 50  0000 C CNN
+F 1 "1K" V 9950 4400 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 9880 4400 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 9950 4400 30  0001 C CNN
+F 4 "71-CRCW0603-1.0K-E3" H 9950 4400 60  0001 C CNN "Mouse PN"
+	1    9950 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 2650 2    60   Input ~ 0
+CAN_TX
+Text GLabel 10250 4700 3    60   Input ~ 0
+CAN_TX
+Text GLabel 6450 6400 2    60   Input ~ 0
+CAN_RX
+Text GLabel 6450 6500 2    60   Input ~ 0
+CAN_TX
+Text GLabel 1550 2850 0    60   Input ~ 0
+J1850_BUS_-_TX
+Text GLabel 1550 2650 0    60   Input ~ 0
+J1850_BUS_+_TX
+Text GLabel 1700 7350 2    60   Input ~ 0
+ISO_K_TX
+$Comp
+L GND #PWR022
+U 1 1 55AA4905
+P 1550 900
+F 0 "#PWR022" H 1550 650 50  0001 C CNN
+F 1 "GND" H 1550 750 50  0000 C CNN
+F 2 "" H 1550 900 60  0000 C CNN
+F 3 "" H 1550 900 60  0000 C CNN
+	1    1550 900 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1550 1300 2    60   Input ~ 0
+CAN_H
+Text GLabel 1550 1700 2    60   Input ~ 0
+CAN_L
+Text GLabel 1550 1500 2    60   Input ~ 0
+K-LINE
+Text GLabel 1550 1400 2    60   Input ~ 0
+L-LINE
+Text GLabel 1550 1200 2    60   Input ~ 0
+J1850+
+Text GLabel 1550 1000 2    60   Input ~ 0
+J1850-
+Text Notes 1700 2050 2    60   ~ 0
+OBD2 Connector
+$Comp
+L GND #PWR023
+U 1 1 55AA65C2
+P 8800 1450
+F 0 "#PWR023" H 8800 1200 50  0001 C CNN
+F 1 "GND" V 8800 1250 50  0000 C CNN
+F 2 "" H 8800 1450 60  0000 C CNN
+F 3 "" H 8800 1450 60  0000 C CNN
+	1    8800 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCP2551-I/SN U10
+U 1 1 55B1E71A
+P 5950 6600
+F 0 "U10" H 5550 6950 50  0000 L CNN
+F 1 "MCP2551" H 6050 6950 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5950 6600 50  0001 C CIN
+F 3 "http://www.mouser.com/ds/2/268/21667d-63675.pdf" H 5950 6600 60  0001 C CNN
+F 4 "579-MCP2551-I/SN" H 5950 6600 60  0001 C CNN "Mouse PN"
+	1    5950 6600
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4800 6700 0    60   Input ~ 0
+CAN_L
+Text GLabel 4800 6500 0    60   Input ~ 0
+CAN_H
+NoConn ~ 6450 6700
+$Comp
+L GND #PWR024
+U 1 1 55B1EF7D
+P 6550 7100
+F 0 "#PWR024" H 6550 6850 50  0001 C CNN
+F 1 "GND" H 6550 6950 50  0000 C CNN
+F 2 "" H 6550 7100 60  0000 C CNN
+F 3 "" H 6550 7100 60  0000 C CNN
+	1    6550 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 55B1F182
+P 5950 7000
+F 0 "#PWR025" H 5950 6750 50  0001 C CNN
+F 1 "GND" H 5950 6850 50  0000 C CNN
+F 2 "" H 5950 7000 60  0000 C CNN
+F 3 "" H 5950 7000 60  0000 C CNN
+	1    5950 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C39
+U 1 1 55B1F376
+P 4950 7250
+F 0 "C39" H 4975 7350 50  0000 L CNN
+F 1 "560P" H 4975 7150 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 4988 7100 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 4950 7250 60  0001 C CNN
+F 4 "77-VJ0603Y561KXACBC" H 4950 7250 60  0001 C CNN "Mouse PN"
+	1    4950 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R52
+U 1 1 55B1F414
+P 4950 6950
+F 0 "R52" V 5030 6950 50  0000 C CNN
+F 1 "120" V 4950 6950 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4880 6950 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 4950 6950 30  0001 C CNN
+F 4 "71-CRCW0603-120-E3" H 4950 6950 60  0001 C CNN "Mouse PN"
+	1    4950 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 55B1F6A3
+P 4950 7400
+F 0 "#PWR026" H 4950 7150 50  0001 C CNN
+F 1 "GND" H 4950 7250 50  0000 C CNN
+F 2 "" H 4950 7400 60  0000 C CNN
+F 3 "" H 4950 7400 60  0000 C CNN
+	1    4950 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 55B1F6FC
+P 5250 7400
+F 0 "#PWR027" H 5250 7150 50  0001 C CNN
+F 1 "GND" H 5250 7250 50  0000 C CNN
+F 2 "" H 5250 7400 60  0000 C CNN
+F 3 "" H 5250 7400 60  0000 C CNN
+	1    5250 7400
+	1    0    0    -1  
+$EndComp
+Text Notes 5400 6000 2    60   ~ 0
+CAN Transciever
+Text Notes 1650 6050 2    60   ~ 0
+ISO Transciever
+Text GLabel 1000 7350 0    60   Input ~ 0
+K-LINE
+Text GLabel 950  6250 0    60   Input ~ 0
+L-LINE
+Text GLabel 1700 6250 2    60   Input ~ 0
+ISO_L_TX
+$Comp
+L R R49
+U 1 1 55B20162
+P 850 6600
+F 0 "R49" V 930 6600 50  0000 C CNN
+F 1 "510" V 850 6600 50  0000 C CNN
+F 2 "Custom Parts:R_1210_SM" V 780 6600 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/PYu-RC1210_51_RoHS_L_(4)-2050.pdf" H 850 6600 30  0001 C CNN
+F 4 "603-RC1210FR-07510RL" H 850 6600 60  0001 C CNN "Mouse PN"
+	1    850  6600
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 55B20611
+P 1750 7050
+F 0 "#PWR028" H 1750 6800 50  0001 C CNN
+F 1 "GND" H 1750 6900 50  0000 C CNN
+F 2 "" H 1750 7050 60  0000 C CNN
+F 3 "" H 1750 7050 60  0000 C CNN
+	1    1750 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 55B21D3D
+P 3300 7400
+F 0 "#PWR029" H 3300 7150 50  0001 C CNN
+F 1 "GND" H 3300 7250 50  0000 C CNN
+F 2 "" H 3300 7400 60  0000 C CNN
+F 3 "" H 3300 7400 60  0000 C CNN
+	1    3300 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 55B21DB4
+P 2700 7000
+F 0 "#PWR030" H 2700 6750 50  0001 C CNN
+F 1 "GND" V 2700 6800 50  0000 C CNN
+F 2 "" H 2700 7000 60  0000 C CNN
+F 3 "" H 2700 7000 60  0000 C CNN
+	1    2700 7000
+	0    1    1    0   
+$EndComp
+Text GLabel 2750 7200 0    60   Input ~ 0
+K-LINE
+Text GLabel 3850 7100 2    60   Input ~ 0
+ISO_RX
+Text GLabel 2650 2750 2    60   Input ~ 0
+PWM_RX
+Text GLabel 1800 3900 0    60   Input ~ 0
+J1850+
+$Comp
+L LM339 U8
+U 2 1 55B2A9F7
+P 2450 3800
+F 0 "U8" H 2500 4000 60  0000 C CNN
+F 1 "LM339" H 2550 3600 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2450 3800 60  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/lm339a" H 2450 3800 60  0001 C CNN
+F 4 "LM339ADR" H 2450 3800 60  0001 C CNN "Mouse PN"
+	2    2450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R33
+U 1 1 55B2AB74
+P 1200 3850
+F 0 "R33" V 1280 3850 50  0000 C CNN
+F 1 "8.87K" V 1200 3850 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 1130 3850 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 1200 3850 30  0001 C CNN
+F 4 "71-CRCW0603-8.87K-E3" H 1200 3850 60  0001 C CNN "Mouse PN"
+	1    1200 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 55B2AD22
+P 1200 4000
+F 0 "#PWR031" H 1200 3750 50  0001 C CNN
+F 1 "GND" H 1200 3850 50  0000 C CNN
+F 2 "" H 1200 4000 60  0000 C CNN
+F 3 "" H 1200 4000 60  0000 C CNN
+	1    1200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 55B2AE3A
+P 2100 3050
+F 0 "#PWR032" H 2100 2800 50  0001 C CNN
+F 1 "GND" H 2100 2900 50  0000 C CNN
+F 2 "" H 2100 3050 60  0000 C CNN
+F 3 "" H 2100 3050 60  0000 C CNN
+	1    2100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 55B2EC6D
+P 2450 5450
+F 0 "#PWR033" H 2450 5200 50  0001 C CNN
+F 1 "GND" H 2450 5300 50  0000 C CNN
+F 2 "" H 2450 5450 60  0000 C CNN
+F 3 "" H 2450 5450 60  0000 C CNN
+	1    2450 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 5050 2    60   Input ~ 0
+J1850-
+Text GLabel 1850 5250 0    60   Input ~ 0
+J1850_BUS_-_TX
+$Comp
+L LM317_SOT223 U9
+U 1 1 55B33F41
+P 5100 3100
+F 0 "U9" H 5100 3400 60  0000 C CNN
+F 1 "LM317" H 5150 2850 60  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5100 3100 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/308/LM317M-D-87090.pdf" H 5100 3100 60  0001 C CNN
+F 4 "863-LM317MBSTT3G" H 5100 3100 60  0001 C CNN "Mouse PN"
+	1    5100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R25
+U 1 1 55B34CA2
+P 5350 3500
+F 0 "R25" V 5430 3500 50  0000 C CNN
+F 1 "240" V 5350 3500 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 5280 3500 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 5350 3500 30  0001 C CNN
+F 4 "71-CRCW0603-240-E3" H 5350 3500 60  0001 C CNN "Mouse PN"
+	1    5350 3500
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R24
+U 1 1 55B35518
+P 4850 3500
+F 0 "R24" V 4930 3500 50  0000 C CNN
+F 1 "866" V 4850 3500 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4780 3500 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 4850 3500 30  0001 C CNN
+F 4 "71-CRCW0603-866-E3" H 4850 3500 60  0001 C CNN "Mouse PN"
+	1    4850 3500
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R31
+U 1 1 55B355D8
+P 4700 3800
+F 0 "R31" V 4780 3800 50  0000 C CNN
+F 1 "374" V 4700 3800 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4630 3800 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 4700 3800 30  0001 C CNN
+F 4 "71-CRCW0603-374-E3" H 4700 3800 60  0001 C CNN "Mouse PN"
+	1    4700 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Q_NPN_BEC Q6
+U 1 1 55B35B80
+P 4700 4350
+F 0 "Q6" H 5000 4300 50  0000 R CNN
+F 1 "2N3904" H 5100 4400 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 4900 4450 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/MMBT3904_D14-536637.pdf" H 4700 4350 60  0001 C CNN
+F 4 "821-MMBT3904" H 4700 4350 60  0001 C CNN "Mouse PN"
+	1    4700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PNP_BEC Q5
+U 1 1 55B35FD6
+P 5400 4050
+F 0 "Q5" H 5700 4100 50  0000 R CNN
+F 1 "3906" H 5800 4000 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 5600 4150 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/115/ds30059-15980.pdf" H 5400 4050 60  0001 C CNN
+F 4 "621-MMBT3906-F" H 5400 4050 60  0001 C CNN "Mouse PN"
+	1    5400 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR034
+U 1 1 55B36180
+P 2350 4100
+F 0 "#PWR034" H 2350 3850 50  0001 C CNN
+F 1 "GND" H 2350 3950 50  0000 C CNN
+F 2 "" H 2350 4100 60  0000 C CNN
+F 3 "" H 2350 4100 60  0000 C CNN
+	1    2350 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR035
+U 1 1 55B3623F
+P 4800 4550
+F 0 "#PWR035" H 4800 4300 50  0001 C CNN
+F 1 "GND" H 4800 4400 50  0000 C CNN
+F 2 "" H 4800 4550 60  0000 C CNN
+F 3 "" H 4800 4550 60  0000 C CNN
+	1    4800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR036
+U 1 1 55B362FE
+P 5500 5150
+F 0 "#PWR036" H 5500 4900 50  0001 C CNN
+F 1 "GND" H 5500 5000 50  0000 C CNN
+F 2 "" H 5500 5150 60  0000 C CNN
+F 3 "" H 5500 5150 60  0000 C CNN
+	1    5500 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 55B38770
+P 4600 3250
+F 0 "#PWR037" H 4600 3000 50  0001 C CNN
+F 1 "GND" H 4600 3100 50  0000 C CNN
+F 2 "" H 4600 3250 60  0000 C CNN
+F 3 "" H 4600 3250 60  0000 C CNN
+	1    4600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR038
+U 1 1 55B3930C
+P 4300 3950
+F 0 "#PWR038" H 4300 3700 50  0001 C CNN
+F 1 "GND" H 4300 3800 50  0000 C CNN
+F 2 "" H 4300 3950 60  0000 C CNN
+F 3 "" H 4300 3950 60  0000 C CNN
+	1    4300 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 4350 0    60   Input ~ 0
+J1850_BUS_+_TX
+Text GLabel 5700 4550 2    60   Input ~ 0
+J1850+
+$Comp
+L Q_PMOS_GSD Q4
+U 1 1 55B7C06D
+P 8300 3850
+F 0 "Q4" H 8600 3900 50  0000 R CNN
+F 1 "BSS84" H 8850 3800 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 8500 3950 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/149/BSS84-39462.pdf" H 8300 3850 60  0001 C CNN
+F 4 "512-BSS84" H 8300 3850 60  0001 C CNN "Mouse PN"
+	1    8300 3850
+	1    0    0    1   
+$EndComp
+Text Notes 4650 7700 0    60   ~ 0
+CAN_H and CAN_L are high-z until UVLO
+$Comp
+L GND #PWR039
+U 1 1 55B828E1
+P 9700 3800
+F 0 "#PWR039" H 9700 3550 50  0001 C CNN
+F 1 "GND" H 9700 3650 50  0000 C CNN
+F 2 "" H 9700 3800 60  0000 C CNN
+F 3 "" H 9700 3800 60  0000 C CNN
+	1    9700 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7550 4050 3    60   Input ~ 0
+CAN_5V_SW
+Text GLabel 8400 4050 3    60   Input ~ 0
+CAN_3.3V_SW
+$Comp
+L GND #PWR040
+U 1 1 55B888B6
+P 8100 5200
+F 0 "#PWR040" H 8100 4950 50  0001 C CNN
+F 1 "GND" H 8100 5050 50  0000 C CNN
+F 2 "" H 8100 5200 60  0000 C CNN
+F 3 "" H 8100 5200 60  0000 C CNN
+	1    8100 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 2350 2    60   Input ~ 0
+CAN_POWERDOWN
+Text GLabel 6000 6100 2    60   Input ~ 0
+CAN_5V_SW
+Text GLabel 8550 3650 2    60   Input ~ 0
+3V3_C
+Text GLabel 3300 6800 1    60   Input ~ 0
+CAN_5V_SW
+$Comp
+L GND #PWR041
+U 1 1 55B98D87
+P 10300 3800
+F 0 "#PWR041" H 10300 3550 50  0001 C CNN
+F 1 "GND" H 10300 3650 50  0000 C CNN
+F 2 "" H 10300 3800 60  0000 C CNN
+F 3 "" H 10300 3800 60  0000 C CNN
+	1    10300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR042
+U 1 1 55B98E50
+P 10600 3800
+F 0 "#PWR042" H 10600 3550 50  0001 C CNN
+F 1 "GND" H 10600 3650 50  0000 C CNN
+F 2 "" H 10600 3800 60  0000 C CNN
+F 3 "" H 10600 3800 60  0000 C CNN
+	1    10600 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 10600 3500 1    60   Input ~ 0
+CAN_3.3V_SW
+Text GLabel 2050 2400 0    60   Input ~ 0
+CAN_5V_SW
+Text GLabel 1150 3350 0    60   Input ~ 0
+CAN_5V_SW
+Text GLabel 2150 4750 0    60   Input ~ 0
+CAN_5V_SW
+Text GLabel 2950 3300 2    60   Input ~ 0
+CAN_3.3V_SW
+Text GLabel 2700 2300 2    60   Input ~ 0
+CAN_3.3V_SW
+Text GLabel 6700 4050 3    60   Input ~ 0
+CAN_12V_SW
+$Comp
+L R R35
+U 1 1 55BC4846
+P 6400 4000
+F 0 "R35" V 6480 4000 50  0000 C CNN
+F 1 "2K2" V 6400 4000 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 6330 4000 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 6400 4000 30  0001 C CNN
+F 4 "71-CRCW0603-2.2K-E3" H 6400 4000 60  0001 C CNN "Mouse PN"
+	1    6400 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 2850 0    60   Input ~ 0
+CAN_12V_SW
+Text GLabel 3000 6600 1    60   Input ~ 0
+CAN_12V_SW
+Text GLabel 700  6800 2    60   Input ~ 0
+CAN_12V_SW
+$Comp
+L GND #PWR043
+U 1 1 55BC6F4D
+P 9350 3800
+F 0 "#PWR043" H 9350 3550 50  0001 C CNN
+F 1 "GND" H 9350 3650 50  0000 C CNN
+F 2 "" H 9350 3800 60  0000 C CNN
+F 3 "" H 9350 3800 60  0000 C CNN
+	1    9350 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 9350 3500 1    60   Input ~ 0
+CAN_12V_SW
+Text GLabel 8950 4250 1    60   Input ~ 0
+CAN_POWERDOWN
+$Comp
+L R R15
+U 1 1 55BD0AC0
+P 5150 850
+F 0 "R15" V 5230 850 50  0000 C CNN
+F 1 "62K" V 5150 850 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 5080 850 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 5150 850 30  0001 C CNN
+F 4 "71-CRCW0603-62K-E3" H 5150 850 60  0001 C CNN "Mouse PN"
+	1    5150 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 55BD137A
+P 5150 1450
+F 0 "R20" V 5230 1450 50  0000 C CNN
+F 1 "10K" V 5150 1450 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 5080 1450 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 5150 1450 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 5150 1450 60  0001 C CNN "Mouse PN"
+	1    5150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR044
+U 1 1 55BD1D18
+P 5150 1600
+F 0 "#PWR044" H 5150 1350 50  0001 C CNN
+F 1 "GND" H 5150 1450 50  0000 C CNN
+F 2 "" H 5150 1600 60  0000 C CNN
+F 3 "" H 5150 1600 60  0000 C CNN
+	1    5150 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 1100 0    60   Input ~ 0
+BAT_SAMPLE
+Text GLabel 7100 1450 0    60   Input ~ 0
+BAT_SAMPLE
+Text GLabel 3850 6700 1    60   Input ~ 0
+CAN_3.3V_SW
+Text GLabel 4000 3750 0    60   Input ~ 0
+PWM/~VPW
+Text GLabel 5150 600  0    60   Input ~ 0
+CAN_12V_SW
+Wire Wire Line
+	9000 1350 8800 1350
+Wire Wire Line
+	10200 2400 10200 2300
+Wire Wire Line
+	9700 2400 10200 2400
+Wire Wire Line
+	9700 2400 9700 2250
+Wire Wire Line
+	9700 2250 8800 2250
+Connection ~ 9900 2400
+Wire Wire Line
+	8800 2150 9700 2150
+Wire Wire Line
+	9700 2150 9700 2100
+Wire Wire Line
+	9700 2100 9900 2100
+Connection ~ 9950 4250
+Wire Wire Line
+	10200 2200 10200 2050
+Wire Wire Line
+	9000 800  9000 1350
+Wire Wire Line
+	9000 800  9200 800 
+Wire Wire Line
+	6550 6800 6450 6800
+Wire Wire Line
+	4800 6700 5450 6700
+Wire Wire Line
+	4800 6500 5450 6500
+Wire Wire Line
+	4950 6800 4950 6500
+Connection ~ 4950 6500
+Wire Wire Line
+	5250 6800 5250 6700
+Connection ~ 5250 6700
+Wire Wire Line
+	600  6600 600  7000
+Wire Wire Line
+	600  7000 700  7000
+Wire Wire Line
+	1000 6250 1000 6600
+Wire Wire Line
+	1000 6250 950  6250
+Wire Wire Line
+	1000 7000 1000 7350
+Wire Wire Line
+	1600 7000 1750 7000
+Wire Wire Line
+	1750 6600 1750 7050
+Wire Wire Line
+	1600 6600 1750 6600
+Connection ~ 1750 7000
+Wire Wire Line
+	1000 6600 1200 6600
+Wire Wire Line
+	1000 7000 1200 7000
+Wire Wire Line
+	1400 6300 1400 6250
+Wire Wire Line
+	1400 7300 1400 7350
+Connection ~ 3000 7000
+Wire Wire Line
+	3750 7100 3850 7100
+Wire Wire Line
+	3850 7100 3850 7000
+Wire Wire Line
+	2650 2650 2650 2750
+Wire Wire Line
+	2650 2750 2550 2750
+Wire Wire Line
+	1200 3700 2100 3700
+Wire Wire Line
+	2900 3700 2900 3800
+Wire Wire Line
+	2900 3800 2800 3800
+Wire Wire Line
+	5500 4550 5700 4550
+Wire Wire Line
+	5200 4050 5100 4050
+Wire Wire Line
+	5100 4050 5100 3950
+Wire Wire Line
+	5500 3650 5100 3650
+Wire Wire Line
+	5500 2950 5500 3850
+Connection ~ 5500 3650
+Connection ~ 5500 3500
+Wire Wire Line
+	5100 3450 5100 3500
+Wire Wire Line
+	5000 3500 5200 3500
+Connection ~ 5100 3500
+Wire Wire Line
+	4700 3500 4700 3650
+Wire Wire Line
+	4300 3550 4300 3500
+Wire Wire Line
+	4300 3500 4700 3500
+Wire Wire Line
+	4300 3950 4700 3950
+Wire Wire Line
+	4700 2950 4600 2950
+Wire Wire Line
+	4600 2950 4600 2850
+Wire Wire Line
+	4800 4150 4800 4050
+Wire Wire Line
+	9800 4250 10250 4250
+Wire Wire Line
+	2700 5050 2450 5050
+Wire Wire Line
+	7250 3200 7250 3550
+Wire Wire Line
+	6400 3200 8200 3200
+Wire Wire Line
+	8100 3200 8100 3550
+Connection ~ 7250 3200
+Wire Wire Line
+	7250 4150 7250 4700
+Wire Wire Line
+	6400 4700 8100 4700
+Wire Wire Line
+	8100 4150 8100 4800
+Wire Wire Line
+	8550 3950 8550 3650
+Wire Wire Line
+	8550 3650 8400 3650
+Connection ~ 8100 4700
+Wire Wire Line
+	7100 2450 7100 2450
+Connection ~ 9000 800 
+Wire Wire Line
+	7100 1650 7100 1650
+Wire Wire Line
+	7100 1850 7100 1850
+Wire Wire Line
+	2050 2400 2100 2400
+Wire Wire Line
+	2100 2400 2100 2450
+Wire Wire Line
+	2350 3350 2350 3500
+Wire Wire Line
+	1150 3350 2350 3350
+Wire Wire Line
+	1200 3350 1200 3400
+Wire Wire Line
+	2950 3300 2900 3300
+Wire Wire Line
+	2900 3300 2900 3400
+Wire Wire Line
+	2700 2300 2650 2300
+Wire Wire Line
+	2650 2300 2650 2350
+Wire Wire Line
+	6400 4150 6400 4700
+Connection ~ 7250 4700
+Wire Wire Line
+	6400 3200 6400 3550
+Wire Wire Line
+	6700 3650 6700 3200
+Connection ~ 6700 3200
+Wire Notes Line
+	9100 2900 9100 5400
+Wire Notes Line
+	9100 5400 11100 5400
+Wire Notes Line
+	5700 2100 6200 2900
+Wire Wire Line
+	5150 1000 5150 1300
+Wire Wire Line
+	4850 1300 4850 1250
+Connection ~ 5150 1250
+Wire Wire Line
+	4850 1600 5500 1600
+Wire Notes Line
+	6200 2900 9100 2900
+Wire Wire Line
+	700  6800 600  6800
+Connection ~ 600  6800
+Wire Wire Line
+	600  6600 700  6600
+Wire Notes Line
+	7000 6500 7000 5800
+Wire Notes Line
+	500  5800 9100 5800
+Wire Notes Line
+	4300 5800 4300 7700
+Wire Notes Line
+	500  2100 5700 2100
+Wire Notes Line
+	6200 2900 6200 5800
+Wire Wire Line
+	6000 6100 5950 6100
+Wire Wire Line
+	5950 6100 5950 6200
+Wire Wire Line
+	3000 6900 3000 7000
+Connection ~ 1200 3350
+Wire Wire Line
+	10000 3500 9700 3500
+Wire Wire Line
+	9700 3800 10000 3800
+Wire Wire Line
+	10900 3500 10600 3500
+Wire Wire Line
+	10600 3800 10900 3800
+$Comp
+L GND #PWR045
+U 1 1 55C0BB59
+P 3150 900
+F 0 "#PWR045" H 3150 650 50  0001 C CNN
+F 1 "GND" H 3150 750 50  0000 C CNN
+F 2 "" H 3150 900 60  0000 C CNN
+F 3 "" H 3150 900 60  0000 C CNN
+	1    3150 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L ESDAxxSC6 U5
+U 1 1 55C1089B
+P 3550 900
+F 0 "U5" H 3350 550 60  0000 C CNN
+F 1 "ESDAxxSC6" H 3550 1250 60  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6" H 3550 900 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/389/CD00002055-250307.pdf" H 3550 900 60  0001 C CNN
+F 4 "511-ESDA19SC6" H 3550 900 60  0001 C CNN "Mouse PN"
+	1    3550 900 
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 1850 2    60   Input ~ 0
+K-LINE
+Text GLabel 3150 1050 0    60   Input ~ 0
+L-LINE
+Text GLabel 3950 750  2    60   Input ~ 0
+J1850+
+Text GLabel 3950 1050 2    60   Input ~ 0
+J1850-
+Wire Wire Line
+	5150 600  5150 600 
+Wire Wire Line
+	5150 600  5150 700 
+Wire Wire Line
+	2550 1300 2550 1600
+$Comp
+L GND #PWR046
+U 1 1 55C18827
+P 3150 1700
+F 0 "#PWR046" H 3150 1450 50  0001 C CNN
+F 1 "GND" H 3150 1550 50  0000 C CNN
+F 2 "" H 3150 1700 60  0000 C CNN
+F 3 "" H 3150 1700 60  0000 C CNN
+	1    3150 1700
+	0    1    1    0   
+$EndComp
+Text GLabel 3150 1550 0    60   Input ~ 0
+CAN_L
+Text GLabel 3150 750  0    60   Input ~ 0
+CAN_H
+Wire Wire Line
+	4850 1250 5150 1250
+Wire Notes Line
+	5700 2100 5700 500 
+Text Notes 7500 1100 0    60   ~ 0
+CAN Protocol Interface
+Text Notes 3750 2550 0    60   ~ 0
+J1850 Tranciever
+Wire Notes Line
+	2300 500  2300 2100
+Wire Notes Line
+	4500 500  4500 2100
+Text Notes 2400 2050 0    60   ~ 0
+CAN Interface\nCircuit Protection
+Text Notes 4650 2050 0    60   ~ 0
+Car Battery \nVoltage Monitoring
+Text Notes 7450 6300 0    60   ~ 0
+16MHz\nOBD Clock
+Text GLabel 7100 2150 0    60   Input ~ 0
+CAN_CLK
+$Comp
+L DB9 J1
+U 1 1 55B3C04C
+P 1100 1300
+F 0 "J1" H 1100 1850 70  0000 C CNN
+F 1 "DB9" H 1100 750 70  0000 C CNN
+F 2 "Custom Parts:D09P13B4PA00LF" H 1100 1300 60  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent/en/US/adirect/fci?cmd=catProductDetail&showAddButton=true&productID=D09P13B4PA00LF" H 1100 1300 60  0001 C CNN
+F 4 "649-D09P13B4PA00LF" H 1100 1300 60  0001 C CNN "Mouse PN"
+	1    1100 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 1600 1550 1600
+$Comp
+L GND #PWR047
+U 1 1 55B3CF26
+P 1550 1100
+F 0 "#PWR047" H 1550 850 50  0001 C CNN
+F 1 "GND" H 1550 950 50  0000 C CNN
+F 2 "" H 1550 1100 60  0000 C CNN
+F 3 "" H 1550 1100 60  0000 C CNN
+	1    1550 1100
+	0    -1   -1   0   
+$EndComp
+Text Notes 9150 5700 0    60   ~ 0
+CAN_POWERDOWN is open collector\nneeds pullup to opperate.\nIf jumper is out circuit is just on.
+Wire Wire Line
+	8550 4250 8550 5000
+Wire Wire Line
+	10250 4550 10250 4700
+Wire Wire Line
+	10250 4600 10500 4600
+Wire Wire Line
+	10500 4600 10500 4550
+Connection ~ 10250 4600
+Text GLabel 10550 4250 2    60   Input ~ 0
+CAN_5V_SW
+Wire Wire Line
+	10550 4250 10500 4250
+$Comp
+L GND #PWR048
+U 1 1 55B38EC3
+P 3950 900
+F 0 "#PWR048" H 3950 650 50  0001 C CNN
+F 1 "GND" H 3950 750 50  0000 C CNN
+F 2 "" H 3950 900 60  0000 C CNN
+F 3 "" H 3950 900 60  0000 C CNN
+	1    3950 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR049
+U 1 1 55B390EE
+P 3950 1700
+F 0 "#PWR049" H 3950 1450 50  0001 C CNN
+F 1 "GND" H 3950 1550 50  0000 C CNN
+F 2 "" H 3950 1700 60  0000 C CNN
+F 3 "" H 3950 1700 60  0000 C CNN
+	1    3950 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D1
+U 1 1 55B40CD4
+P 5500 1150
+F 0 "D1" H 5500 1250 50  0000 C CNN
+F 1 "4148" H 5500 1050 50  0000 C CNN
+F 2 "Custom Parts:Diode_0805_12_SM" H 5500 1150 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 5500 1150 60  0001 C CNN
+F 4 "821-TS4148-0805-RY" H 5500 1150 60  0001 C CNN "Mouse PN"
+	1    5500 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 1300 5250 1300
+Wire Wire Line
+	5250 1300 5250 1100
+Wire Wire Line
+	5250 1100 5150 1100
+Connection ~ 5150 1100
+Connection ~ 5150 1600
+Text GLabel 7100 2250 0    60   Input ~ 0
+CAN_CLKN
+$Comp
+L CRYSTAL_SMD X2
+U 1 1 55B75E65
+P 8100 6050
+F 0 "X2" H 8100 6250 50  0000 C CNN
+F 1 "16MHz" H 8000 6150 50  0000 L CNN
+F 2 "Custom Parts:AWSCR" H 8100 6050 60  0001 C CNN
+F 3 "http://www.abracon.com/Resonators/N_AWSCR-MT.pdf" H 8100 6050 60  0001 C CNN
+F 4 "815-AWSCR-16.00MTD-T" H 8100 6050 60  0001 C CNN "Mouse PN"
+	1    8100 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR050
+U 1 1 55B7C569
+P 8100 6150
+F 0 "#PWR050" H 8100 5900 50  0001 C CNN
+F 1 "GND" H 8100 6000 50  0000 C CNN
+F 2 "" H 8100 6150 60  0000 C CNN
+F 3 "" H 8100 6150 60  0000 C CNN
+	1    8100 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 55B92A71
+P 10650 1100
+F 0 "P4" H 10650 1200 50  0000 C CNN
+F 1 "DB-9 to OBD2" V 10750 1100 50  0000 C CNN
+F 2 "" H 10650 1100 60  0001 C CNN
+F 3 "http://www.amazon.com/Adapter-Cable--Connecting-Diagnostic-Interface-Compliant/dp/B007UKTW8E/ref=sr_1_1?ie=UTF8&qid=1443117694&sr=8-1" H 10650 1100 60  0001 C CNN
+	1    10650 1100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10450 1100
+Wire Wire Line
+	3950 1550 3950 1300
+Wire Wire Line
+	3950 1300 2550 1300
+Text GLabel 7100 1950 0    60   Input ~ 0
+J1850_BUS_-_TX
+Text GLabel 2900 3800 2    60   Input ~ 0
+~VPW_RX
+Text GLabel 7100 2350 0    60   Input ~ 0
+ISO_RX
+Text GLabel 9700 3500 1    60   Input ~ 0
+CAN_5V_SW
+Text GLabel 5500 1000 1    60   Input ~ 0
+3V3_C
+Text GLabel 8200 3200 2    60   Input ~ 0
+12V0_B
+Connection ~ 8100 3200
+Text GLabel 7550 3650 1    60   Input ~ 0
+5V0_A
+Text GLabel 9800 4250 0    60   Input ~ 0
+3V3_C
+Text GLabel 10300 3500 1    60   Input ~ 0
+3V3_C
+Text GLabel 8300 800  0    60   Input ~ 0
+3V3_C
+Text GLabel 3950 1300 2    60   Input ~ 0
+12V0_A
+Text GLabel 7100 1350 0    60   Input ~ 0
+~CAN_RESET
+Text GLabel 7100 2450 0    60   Input ~ 0
+~CAN_SLEEP
+Text GLabel 8800 2450 2    60   Input ~ 0
+CAN_TXD
+Text GLabel 8800 2550 2    60   Input ~ 0
+CAN_RXD
+Text GLabel 9500 6100 0    60   Input ~ 0
+CAN_H
+Text GLabel 10800 6100 2    60   Input ~ 0
+CAN_L
+$Comp
+L SPST SW1
+U 1 1 55F7E47B
+P 10000 6100
+F 0 "SW1" H 10000 6200 50  0000 C CNN
+F 1 "SPST" H 10000 6000 50  0000 C CNN
+F 2 "Custom Parts:SW_SPST_FSMSM_SM" H 10000 6100 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/307/en-a6tn-17713.pdf" H 10000 6100 60  0001 C CNN
+F 4 "653-A6TN-1104" H 10000 6100 60  0001 C CNN "Mouse PN"
+	1    10000 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4250 8950 4350
+Wire Wire Line
+	8950 4350 8550 4350
+Connection ~ 8550 4350
+Wire Wire Line
+	8550 5000 8400 5000
+Wire Notes Line
+	11200 5850 9100 5850
+Wire Notes Line
+	9100 5800 9100 6500
+Text Notes 10650 6350 2    60   ~ 0
+CAN 120ohm Terminator
+Wire Wire Line
+	3000 7000 3050 7000
+Connection ~ 3950 1300
+Text GLabel 7100 2550 0    60   Input ~ 0
+3V3_C
+$Comp
+L ESDAxxSC6 U6
+U 1 1 5604541F
+P 3550 1700
+F 0 "U6" H 3350 1350 60  0000 C CNN
+F 1 "ESDAxxSC6" H 3550 2050 60  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-6" H 3550 1700 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/389/CD00002055-250307.pdf" H 3550 1700 60  0001 C CNN
+F 4 "511-ESDA19SC6" H 3550 1700 60  0001 C CNN "Mouse PN"
+	1    3550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C30
+U 1 1 56046502
+P 4850 1450
+F 0 "C30" H 4875 1550 50  0000 L CNN
+F 1 "100N" H 4875 1350 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 4888 1300 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 4850 1450 60  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 4850 1450 60  0001 C CNN "Mouse PN"
+	1    4850 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 56046C18
+P 5500 1450
+F 0 "D2" H 5500 1550 50  0000 C CNN
+F 1 "4148" H 5500 1350 50  0000 C CNN
+F 2 "Custom Parts:Diode_0805_12_SM" H 5500 1450 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 5500 1450 60  0001 C CNN
+F 4 "821-TS4148-0805-RY" H 5500 1450 60  0001 C CNN "Mouse PN"
+	1    5500 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L C C29
+U 1 1 56048D13
+P 9200 950
+F 0 "C29" H 9225 1050 50  0000 L CNN
+F 1 "1U" H 9225 850 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 9238 800 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf" H 9200 950 60  0001 C CNN
+F 4 "603-CC603KRX7R7BB105" H 9200 950 60  0001 C CNN "Mouse PN"
+	1    9200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C31
+U 1 1 56049282
+P 9900 2250
+F 0 "C31" H 9925 2350 50  0000 L CNN
+F 1 "4U7" H 9925 2150 50  0000 L CNN
+F 2 "Custom Parts:C_0805_SM" H 9938 2100 30  0001 C CNN
+F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf" H 9900 2250 60  0001 C CNN
+F 4 "581-12063C475KAT2A" H 9900 2250 60  0001 C CNN "Mouse PN"
+	1    9900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L FILTER FB4
+U 1 1 5604928A
+P 8650 800
+F 0 "FB4" H 8650 950 50  0000 C CNN
+F 1 "220" H 8650 700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" H 8650 800 60  0001 C CNN
+F 3 "http://product.tdk.com/emc/beads/detailed_information.php?lang=en&ref=jp&part_no=MPZ1608S221ATA00" H 8650 800 60  0001 C CNN
+F 4 "810-MPZ1608S221ATA00" H 8650 800 60  0001 C CNN "Mouse PN"
+	1    8650 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C35
+U 1 1 5604DEF3
+P 10000 3650
+F 0 "C35" H 10025 3750 50  0000 L CNN
+F 1 "1U" H 10025 3550 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 10038 3500 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf" H 10000 3650 60  0001 C CNN
+F 4 "603-CC603KRX7R7BB105" H 10000 3650 60  0001 C CNN "Mouse PN"
+	1    10000 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C33
+U 1 1 5604E07D
+P 9350 3650
+F 0 "C33" H 9375 3750 50  0000 L CNN
+F 1 "100N" H 9375 3550 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 9388 3500 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 9350 3650 60  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 9350 3650 60  0001 C CNN "Mouse PN"
+	1    9350 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C34
+U 1 1 5604EB81
+P 9700 3650
+F 0 "C34" H 9725 3750 50  0000 L CNN
+F 1 "100N" H 9725 3550 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 9738 3500 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 9700 3650 60  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 9700 3650 60  0001 C CNN "Mouse PN"
+	1    9700 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C38
+U 1 1 5604ECAE
+P 10900 3650
+F 0 "C38" H 10925 3750 50  0000 L CNN
+F 1 "100N" H 10925 3550 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 10938 3500 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 10900 3650 60  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 10900 3650 60  0001 C CNN "Mouse PN"
+	1    10900 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C36
+U 1 1 5604F281
+P 10300 3650
+F 0 "C36" H 10325 3750 50  0000 L CNN
+F 1 "1U" H 10325 3550 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 10338 3500 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf" H 10300 3650 60  0001 C CNN
+F 4 "603-CC603KRX7R7BB105" H 10300 3650 60  0001 C CNN "Mouse PN"
+	1    10300 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C37
+U 1 1 5604F3BB
+P 10600 3650
+F 0 "C37" H 10625 3750 50  0000 L CNN
+F 1 "1U" H 10625 3550 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 10638 3500 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf" H 10600 3650 60  0001 C CNN
+F 4 "603-CC603KRX7R7BB105" H 10600 3650 60  0001 C CNN "Mouse PN"
+	1    10600 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q3
+U 1 1 560520AD
+P 7450 3850
+F 0 "Q3" H 7750 3900 50  0000 R CNN
+F 1 "BSS84" H 8000 3800 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 7650 3950 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/149/BSS84-39462.pdf" H 7450 3850 60  0001 C CNN
+F 4 "512-BSS84" H 7450 3850 60  0001 C CNN "Mouse PN"
+	1    7450 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q2
+U 1 1 560521FD
+P 6600 3850
+F 0 "Q2" H 6900 3900 50  0000 R CNN
+F 1 "BSS84" H 7150 3800 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 6800 3950 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/149/BSS84-39462.pdf" H 6600 3850 60  0001 C CNN
+F 4 "512-BSS84" H 6600 3850 60  0001 C CNN "Mouse PN"
+	1    6600 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_NMOS_SGD Q7
+U 1 1 56052C71
+P 8200 5000
+F 0 "Q7" H 8500 5050 50  0000 R CNN
+F 1 "2N7000" H 8700 4950 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 8400 5100 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/149/2N7002K-102052.pdf" H 8200 5000 60  0001 C CNN
+F 4 "512-2N7002K" H 8200 5000 60  0001 C CNN "Mouse PN"
+	1    8200 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R28
+U 1 1 56052FD9
+P 6400 3700
+F 0 "R28" V 6480 3700 50  0000 C CNN
+F 1 "10K" V 6400 3700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 6330 3700 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 6400 3700 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 6400 3700 60  0001 C CNN "Mouse PN"
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R29
+U 1 1 5605361F
+P 7250 3700
+F 0 "R29" V 7330 3700 50  0000 C CNN
+F 1 "10K" V 7250 3700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 7180 3700 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 7250 3700 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 7250 3700 60  0001 C CNN "Mouse PN"
+	1    7250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R30
+U 1 1 560537AD
+P 8100 3700
+F 0 "R30" V 8180 3700 50  0000 C CNN
+F 1 "10K" V 8100 3700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 8030 3700 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 8100 3700 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 8100 3700 60  0001 C CNN "Mouse PN"
+	1    8100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R39
+U 1 1 5605393B
+P 8550 4100
+F 0 "R39" V 8630 4100 50  0000 C CNN
+F 1 "10K" V 8550 4100 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 8480 4100 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 8550 4100 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 8550 4100 60  0001 C CNN "Mouse PN"
+	1    8550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R36
+U 1 1 56054144
+P 7250 4000
+F 0 "R36" V 7330 4000 50  0000 C CNN
+F 1 "2K2" V 7250 4000 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 7180 4000 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 7250 4000 30  0001 C CNN
+F 4 "71-CRCW0603-2.2K-E3" H 7250 4000 60  0001 C CNN "Mouse PN"
+	1    7250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R37
+U 1 1 56054398
+P 8100 4000
+F 0 "R37" V 8180 4000 50  0000 C CNN
+F 1 "2K2" V 8100 4000 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 8030 4000 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 8100 4000 30  0001 C CNN
+F 4 "71-CRCW0603-2.2K-E3" H 8100 4000 60  0001 C CNN "Mouse PN"
+	1    8100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R42
+U 1 1 56058495
+P 10250 4400
+F 0 "R42" V 10330 4400 50  0000 C CNN
+F 1 "100K" V 10250 4400 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 10180 4400 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 10250 4400 30  0001 C CNN
+F 4 "71-CRCW0603-100K-E3" H 10250 4400 60  0001 C CNN "Mouse PN"
+	1    10250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R43
+U 1 1 5605879F
+P 10500 4400
+F 0 "R43" V 10580 4400 50  0000 C CNN
+F 1 "1K" V 10500 4400 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 10430 4400 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 10500 4400 30  0001 C CNN
+F 4 "71-CRCW0603-1.0K-E3" H 10500 4400 60  0001 C CNN "Mouse PN"
+	1    10500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R47
+U 1 1 56059C7F
+P 10650 6100
+F 0 "R47" V 10730 6100 50  0000 C CNN
+F 1 "120" V 10650 6100 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 10580 6100 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 10650 6100 30  0001 C CNN
+F 4 "71-CRCW0603-120-E3" H 10650 6100 60  0001 C CNN "Mouse PN"
+	1    10650 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L D D9
+U 1 1 5605AAE2
+P 5500 5000
+F 0 "D9" H 5500 5100 50  0000 C CNN
+F 1 "4148" H 5500 4900 50  0000 C CNN
+F 2 "Custom Parts:Diode_0805_12_SM" H 5500 5000 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 5500 5000 60  0001 C CNN
+F 4 "821-TS4148-0805-RY" H 5500 5000 60  0001 C CNN "Mouse PN"
+	1    5500 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D7
+U 1 1 5605B14B
+P 5500 4400
+F 0 "D7" H 5500 4500 50  0000 C CNN
+F 1 "4148" H 5500 4300 50  0000 C CNN
+F 2 "Custom Parts:Diode_0805_12_SM" H 5500 4400 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 5500 4400 60  0001 C CNN
+F 4 "821-TS4148-0805-RY" H 5500 4400 60  0001 C CNN "Mouse PN"
+	1    5500 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R44
+U 1 1 5605B2E0
+P 5500 4700
+F 0 "R44" V 5580 4700 50  0000 C CNN
+F 1 "10K" V 5500 4700 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 5430 4700 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 5500 4700 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 5500 4700 60  0001 C CNN "Mouse PN"
+	1    5500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D8
+U 1 1 5605B7C0
+P 2300 4750
+F 0 "D8" H 2300 4850 50  0000 C CNN
+F 1 "4148" H 2300 4650 50  0000 C CNN
+F 2 "Custom Parts:Diode_0805_12_SM" H 2300 4750 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/taiwansemiconductor_TS4148RY-553424.pdf" H 2300 4750 60  0001 C CNN
+F 4 "821-TS4148-0805-RY" H 2300 4750 60  0001 C CNN "Mouse PN"
+	1    2300 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R40
+U 1 1 5605BA35
+P 4350 4350
+F 0 "R40" V 4430 4350 50  0000 C CNN
+F 1 "10K" V 4350 4350 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4280 4350 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 4350 4350 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 4350 4350 60  0001 C CNN "Mouse PN"
+	1    4350 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R38
+U 1 1 5605BC94
+P 4950 4050
+F 0 "R38" V 5030 4050 50  0000 C CNN
+F 1 "2K2" V 4950 4050 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 4880 4050 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 4950 4050 30  0001 C CNN
+F 4 "71-CRCW0603-2.2K-E3" H 4950 4050 60  0001 C CNN "Mouse PN"
+	1    4950 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R32
+U 1 1 5605BE37
+P 5100 3800
+F 0 "R32" V 5180 3800 50  0000 C CNN
+F 1 "10K" V 5100 3800 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 5030 3800 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 5100 3800 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 5100 3800 60  0001 C CNN "Mouse PN"
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 5605C1F3
+P 2900 3550
+F 0 "R27" V 2980 3550 50  0000 C CNN
+F 1 "10K" V 2900 3550 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 2830 3550 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 2900 3550 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 2900 3550 60  0001 C CNN "Mouse PN"
+	1    2900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R21
+U 1 1 5605C36B
+P 2650 2500
+F 0 "R21" V 2730 2500 50  0000 C CNN
+F 1 "10K" V 2650 2500 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 2580 2500 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 2650 2500 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 2650 2500 60  0001 C CNN "Mouse PN"
+	1    2650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 5605C4B6
+P 1700 2650
+F 0 "R22" V 1780 2650 50  0000 C CNN
+F 1 "10K" V 1700 2650 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 1630 2650 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 1700 2650 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 1700 2650 60  0001 C CNN "Mouse PN"
+	1    1700 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R23
+U 1 1 5605C5FE
+P 1700 2850
+F 0 "R23" V 1780 2850 50  0000 C CNN
+F 1 "10K" V 1700 2850 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 1630 2850 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 1700 2850 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 1700 2850 60  0001 C CNN "Mouse PN"
+	1    1700 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R34
+U 1 1 5605C791
+P 1950 3900
+F 0 "R34" V 2030 3900 50  0000 C CNN
+F 1 "10K" V 1950 3900 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 1880 3900 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 1950 3900 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 1950 3900 60  0001 C CNN "Mouse PN"
+	1    1950 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L LM339 U8
+U 1 1 5605CA00
+P 2200 2750
+F 0 "U8" H 2250 2950 60  0000 C CNN
+F 1 "LM339" H 2300 2550 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2200 2750 60  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/lm339a" H 2200 2750 60  0001 C CNN
+F 4 "LM339ADR" H 2200 2750 60  0001 C CNN "Mouse PN"
+	1    2200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM339 U8
+U 3 1 5605D2BB
+P 3400 7100
+F 0 "U8" H 3450 7300 60  0000 C CNN
+F 1 "LM339" H 3500 6900 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3400 7100 60  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/lm339a" H 3400 7100 60  0001 C CNN
+F 4 "LM339ADR" H 3400 7100 60  0001 C CNN "Mouse PN"
+	3    3400 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R50
+U 1 1 5605D779
+P 3000 6750
+F 0 "R50" V 3080 6750 50  0000 C CNN
+F 1 "10K" V 3000 6750 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 2930 6750 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 3000 6750 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 3000 6750 60  0001 C CNN "Mouse PN"
+	1    3000 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R51
+U 1 1 5605D8F7
+P 3850 6850
+F 0 "R51" V 3930 6850 50  0000 C CNN
+F 1 "10K" V 3850 6850 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 3780 6850 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 3850 6850 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 3850 6850 60  0001 C CNN "Mouse PN"
+	1    3850 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R56
+U 1 1 5605DA36
+P 2850 7000
+F 0 "R56" V 2930 7000 50  0000 C CNN
+F 1 "10K" V 2850 7000 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 2780 7000 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 2850 7000 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 2850 7000 60  0001 C CNN "Mouse PN"
+	1    2850 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R57
+U 1 1 5605DB8E
+P 2900 7200
+F 0 "R57" V 2980 7200 50  0000 C CNN
+F 1 "10K" V 2900 7200 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 2830 7200 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 2900 7200 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 2900 7200 60  0001 C CNN "Mouse PN"
+	1    2900 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NPN_BEC Q8
+U 1 1 5605DFA8
+P 2350 5250
+F 0 "Q8" H 2650 5200 50  0000 R CNN
+F 1 "2N3904" H 2750 5300 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 2550 5350 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/MMBT3904_D14-536637.pdf" H 2350 5250 60  0001 C CNN
+F 4 "821-MMBT3904" H 2350 5250 60  0001 C CNN "Mouse PN"
+	1    2350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BEC Q10
+U 1 1 5605E101
+P 1400 7100
+F 0 "Q10" V 1550 6950 50  0000 R CNN
+F 1 "2N3904" V 1650 7100 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 1600 7200 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/MMBT3904_D14-536637.pdf" H 1400 7100 60  0001 C CNN
+F 4 "821-MMBT3904" H 1400 7100 60  0001 C CNN "Mouse PN"
+	1    1400 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_NPN_BEC Q9
+U 1 1 5605E65B
+P 1400 6500
+F 0 "Q9" V 1450 6300 50  0000 R CNN
+F 1 "2N3904" V 1350 6400 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 1600 6600 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/395/MMBT3904_D14-536637.pdf" H 1400 6500 60  0001 C CNN
+F 4 "821-MMBT3904" H 1400 6500 60  0001 C CNN "Mouse PN"
+	1    1400 6500
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R46
+U 1 1 56060ABE
+P 2000 5250
+F 0 "R46" V 2080 5250 50  0000 C CNN
+F 1 "1K" V 2000 5250 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 1930 5250 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 2000 5250 30  0001 C CNN
+F 4 "71-CRCW0603-1.0K-E3" H 2000 5250 60  0001 C CNN "Mouse PN"
+	1    2000 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R45
+U 1 1 56061D1B
+P 2450 4900
+F 0 "R45" V 2530 4900 50  0000 C CNN
+F 1 "10K" V 2450 4900 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 2380 4900 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 2450 4900 30  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 2450 4900 60  0001 C CNN "Mouse PN"
+	1    2450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R48
+U 1 1 560629BB
+P 1550 6250
+F 0 "R48" V 1630 6250 50  0000 C CNN
+F 1 "1K" V 1550 6250 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 1480 6250 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 1550 6250 30  0001 C CNN
+F 4 "71-CRCW0603-1.0K-E3" H 1550 6250 60  0001 C CNN "Mouse PN"
+	1    1550 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R58
+U 1 1 56062B17
+P 1550 7350
+F 0 "R58" V 1630 7350 50  0000 C CNN
+F 1 "1K" V 1550 7350 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 1480 7350 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 1550 7350 30  0001 C CNN
+F 4 "71-CRCW0603-1.0K-E3" H 1550 7350 60  0001 C CNN "Mouse PN"
+	1    1550 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R55
+U 1 1 56062E2E
+P 850 7000
+F 0 "R55" V 930 7000 50  0000 C CNN
+F 1 "510" V 850 7000 50  0000 C CNN
+F 2 "Custom Parts:R_1210_SM" V 780 7000 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/PYu-RC1210_51_RoHS_L_(4)-2050.pdf" H 850 7000 30  0001 C CNN
+F 4 "603-RC1210FR-07510RL" H 850 7000 60  0001 C CNN "Mouse PN"
+	1    850  7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NMOS_SGD Q1
+U 1 1 560643DB
+P 4200 3750
+F 0 "Q1" H 3950 3900 50  0000 R CNN
+F 1 "2N7000" H 4050 3600 50  0000 R CNN
+F 2 "Custom Parts:SOT-23-123" H 4400 3850 29  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/149/2N7002K-102052.pdf" H 4200 3750 60  0001 C CNN
+F 4 "512-2N7002K" H 4200 3750 60  0001 C CNN "Mouse PN"
+	1    4200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C32
+U 1 1 56065471
+P 4600 3100
+F 0 "C32" H 4625 3200 50  0000 L CNN
+F 1 "100N" H 4625 3000 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 4638 2950 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/mlcc_commercial_general_en-266370.pdf" H 4600 3100 60  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 4600 3100 60  0001 C CNN "Mouse PN"
+	1    4600 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 56068A93
+P 1200 3550
+F 0 "R26" V 1280 3550 50  0000 C CNN
+F 1 "2K2" V 1200 3550 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 1130 3550 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 1200 3550 30  0001 C CNN
+F 4 "71-CRCW0603-2.2K-E3" H 1200 3550 60  0001 C CNN "Mouse PN"
+	1    1200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R53
+U 1 1 5606AA56
+P 5250 6950
+F 0 "R53" V 5330 6950 50  0000 C CNN
+F 1 "120" V 5250 6950 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 5180 6950 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 5250 6950 30  0001 C CNN
+F 4 "71-CRCW0603-120-E3" H 5250 6950 60  0001 C CNN "Mouse PN"
+	1    5250 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C40
+U 1 1 5606AD61
+P 5250 7250
+F 0 "C40" H 5275 7350 50  0000 L CNN
+F 1 "560P" H 5275 7150 50  0000 L CNN
+F 2 "Custom Parts:C_0603_SM" H 5288 7100 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 5250 7250 60  0001 C CNN
+F 4 "77-VJ0603Y561KXACBC" H 5250 7250 60  0001 C CNN "Mouse PN"
+	1    5250 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R54
+U 1 1 5606B363
+P 6550 6950
+F 0 "R54" V 6630 6950 50  0000 C CNN
+F 1 "4.7K" V 6550 6950 50  0000 C CNN
+F 2 "Custom Parts:R_0603_sm" V 6480 6950 30  0001 C CNN
+F 3 "http://www.vishay.com/doc?20035" H 6550 6950 30  0001 C CNN
+F 4 "71-CRCW0603-4.7K-E3" H 6550 6950 60  0001 C CNN "Mouse PN"
+	1    6550 6950
+	1    0    0    -1  
+$EndComp
+Text GLabel 7900 6050 0    60   Input ~ 0
+CAN_CLK
+Text GLabel 8300 6050 2    60   Input ~ 0
+CAN_CLKN
+Wire Wire Line
+	10200 2050 8800 2050
+Text GLabel 9950 4550 3    60   Input ~ 0
+CAN_TXD
+$Comp
+L LM339 U8
+U 4 1 561EFD20
+P 3800 5050
+F 0 "U8" H 3850 5250 60  0000 C CNN
+F 1 "LM339" H 3900 4850 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3800 5050 60  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/lm339a" H 3800 5050 60  0001 C CNN
+F 4 "LM339ADR" H 3800 5050 60  0001 C CNN "Mouse PN"
+	4    3800 5050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8800 1750
+NoConn ~ 8800 1850
+NoConn ~ 8800 1950
+NoConn ~ 3450 5150
+NoConn ~ 3450 4950
+NoConn ~ 4150 5050
+NoConn ~ 3150 1850
+$EndSCHEMATC
