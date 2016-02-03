@@ -1,2 +1,3 @@
 (fp_lib_table
+  (lib (name Custom)(type KiCad)(uri C:\Users\jbanks2\Documents\Kicad_Custom_Parts)(options "")(descr ""))
 )
