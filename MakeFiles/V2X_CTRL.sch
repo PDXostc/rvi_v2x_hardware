@@ -77,6 +77,7 @@ LIBS:video
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:CUSTOM_KICAD_PART
 LIBS:V2X-cache
 EELAYER 25 0
 EELAYER END
@@ -96,7 +97,7 @@ Text GLabel 3350 3300 0    60   Input ~ 0
 SIMCARD
 Text GLabel 6650 4450 2    60   Input ~ 0
 ~SIM_PWR_ON
-Text GLabel 2500 5750 2    60   Input ~ 0
+Text GLabel 3000 7100 2    60   Input ~ 0
 SIM_RESET
 Text GLabel 3350 3400 0    60   Input ~ 0
 SEQ_DM
@@ -114,15 +115,15 @@ Text GLabel 3350 2900 0    60   Input ~ 0
 SIM_NET
 Text GLabel 3350 3200 0    60   Input ~ 0
 GPS_EN
-Text GLabel 2500 5150 2    60   Input ~ 0
+Text GLabel 3000 6500 2    60   Input ~ 0
 4V1_EN
-Text GLabel 2500 5250 2    60   Input ~ 0
+Text GLabel 3000 6600 2    60   Input ~ 0
 5V0_EN
 Text GLabel 3350 3000 0    60   Input ~ 0
 SIM_TXD
-Text GLabel 2500 5450 2    60   Input ~ 0
+Text GLabel 3000 6800 2    60   Input ~ 0
 ~CAN_SLEEP
-Text GLabel 2500 5550 2    60   Input ~ 0
+Text GLabel 3000 6900 2    60   Input ~ 0
 ~CAN_RESET
 Text Notes 6050 3600 0    69   ~ 0
 SR Clear Serial Data, Output\nSR Latch Serial Data, Output\nCAN TXD to SEQ and FTDI, UART\nSEQ TXD to CAN RXD BUFFER, UART\nACL SPI Chip Select, SPI\nSR and ACL SPI Data Output, SPI\nACL SPI Data Input, SPI\nSR and ACL Clock Output, SPI
@@ -213,33 +214,33 @@ Text GLabel 5150 3000 2    60   Input ~ 0
 CAN_TXD
 Text Notes 8700 3000 0    60   ~ 0
 PDI (a-wire) Programing port
-Text Notes 3100 5900 0    69   ~ 0
+Text Notes 3600 7250 0    69   ~ 0
 4V1/3V3 Power Supply Enable (SIM)\n5V0 Power Supply Enable (CAN + HOST)\n5V0 HOST Enable \nELM/STN /Sleep\nELM/STN /Reset\nSIM Module "Power On"\nSIM Module /Reset\nSIM "Wake up"
 Text Notes 9700 3250 0    69   ~ 0
 SEQ  Reset/PDI_CLK\nSEQ  PDI Data
 $Comp
 L 74HC595 U18
 U 1 1 55FA3B36
-P 1800 5600
-F 0 "U18" H 1950 6200 70  0000 C CNN
-F 1 "74HC595" H 1800 5000 70  0000 C CNN
-F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 1800 5600 60  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/302/74HC_HCT595_Q100-269352.pdf" H 1800 5600 60  0001 C CNN
-F 4 "771-74HC595D-Q100" H 1800 5600 60  0001 C CNN "Mouse PN"
-	1    1800 5600
+P 2300 6950
+F 0 "U18" H 2450 7550 70  0000 C CNN
+F 1 "74HC595" H 2300 6350 70  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 2300 6950 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/302/74HC_HCT595_Q100-269352.pdf" H 2300 6950 60  0001 C CNN
+F 4 "771-74HC595D-Q100" H 2300 6950 60  0001 C CNN "Mouse PN"
+	1    2300 6950
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 5350 2    60   Input ~ 0
+Text GLabel 3000 6700 2    60   Input ~ 0
 5V0_B_EN
 $Comp
 L GND #PWR092
 U 1 1 55FA434A
-P 1100 5750
-F 0 "#PWR092" H 1100 5500 50  0001 C CNN
-F 1 "GND" H 1100 5600 50  0000 C CNN
-F 2 "" H 1100 5750 60  0000 C CNN
-F 3 "" H 1100 5750 60  0000 C CNN
-	1    1100 5750
+P 1600 7100
+F 0 "#PWR092" H 1600 6850 50  0001 C CNN
+F 1 "GND" H 1600 6950 50  0000 C CNN
+F 2 "" H 1600 7100 60  0000 C CNN
+F 3 "" H 1600 7100 60  0000 C CNN
+	1    1600 7100
 	1    0    0    -1  
 $EndComp
 Text GLabel 5150 2800 2    60   Input ~ 0
@@ -327,7 +328,7 @@ Wire Wire Line
 	6400 4650 6750 4650
 Text GLabel 6100 4850 0    60   Input ~ 0
 SIM_PWR_ON
-Text GLabel 2500 5650 2    60   Input ~ 0
+Text GLabel 3000 7000 2    60   Input ~ 0
 SIM_PWR_ON
 Connection ~ 6650 4650
 Wire Wire Line
@@ -422,13 +423,13 @@ Text GLabel 10000 3450 2    60   Input ~ 0
 3V3
 Text GLabel 7050 4650 2    60   Input ~ 0
 3V3
-Text GLabel 1100 5150 0    60   Input ~ 0
+Text GLabel 1600 6500 0    60   Input ~ 0
 SEQ_MOSI
-Text GLabel 1100 5650 0    60   Input ~ 0
+Text GLabel 1600 7000 0    60   Input ~ 0
 SR_LATCH
-Text GLabel 1100 5450 0    60   Input ~ 0
+Text GLabel 1600 6800 0    60   Input ~ 0
 SR_CLEAR
-Text GLabel 1100 5350 0    60   Input ~ 0
+Text GLabel 1600 6700 0    60   Input ~ 0
 SEQ_SCK
 Wire Notes Line
 	500  4200 11200 4200
@@ -590,7 +591,7 @@ Text Notes 6050 2250 0    69   ~ 0
 BUTTON Input\nAccelerometer Interupt 2 input\nAccelerometer Interupt 1 input\nHUB Power State Status input\nSystem Hibernate Supply Enable\nSEQ LED 1 Output\nSEQ LED 2 Output\nSEQ LED 3 Output
 Text GLabel 5150 3100 2    60   Input ~ 0
 CAN_RXD
-Text GLabel 2500 5850 2    60   Input ~ 0
+Text GLabel 3000 7200 2    60   Input ~ 0
 SIM_WAKE
 NoConn ~ 9450 3550
 NoConn ~ 9700 3550
@@ -614,7 +615,7 @@ Text GLabel 9800 4900 1    60   Input ~ 0
 4V1
 Text GLabel 10650 4900 1    60   Input ~ 0
 4V1
-NoConn ~ 2500 6050
+NoConn ~ 3000 7400
 NoConn ~ 5150 2350
 NoConn ~ 5150 2550
 NoConn ~ 5150 2650
