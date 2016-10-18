@@ -13,5 +13,5 @@ Coresponding Git repositories
 Spread sheet for organizing data exported from KICad Bom wizard: https://github.com/jbanks2/KiCad-BOM-export-tool.git
 Kicad Custom Part Libraries for V2X project: https://github.com/jbanks2/Kicad_Custom_Parts.git
 
-Primary Development by Jesse Banks - jbanks2@jaguarlandrover.com
+Primary Development by Jesse Banks - jesse@jopeldesigns.com
 Jaguar Land Rover OSTC - Portland, Oregon 2015-2016
