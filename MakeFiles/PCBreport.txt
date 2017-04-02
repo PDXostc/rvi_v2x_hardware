@@ -1,0 +1,440 @@
+Info: Reading netlist file "C:\Users\Jesse\Documents\JopelDesigns\Projects\rvi_v2x_hardware\MakeFiles\V2X.net".
+
+Info: Using references to match components and footprints.
+
+* Warning: component 'C51': board footprint 'CustomParts:C_0603_SM', netlist footprint 'CustomParts:C_0805_SM'
+
+* Warning: component 'X1': board footprint 'CustomParts:AWSCR', netlist footprint 'Custom:AWSCR'
+
+* Warning: component 'X2': board footprint 'CustomParts:AWSCR', netlist footprint 'Custom:AWSCR'
+
+Error: No footprint defined for component 'P2'.
+
+Error: No footprint defined for component 'W1'.
+
+Info: Checking netlist component footprint "C1:/55AB3ADF/56065471:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C2:/55AB3ADF/56046502:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C3:/55AB3ADF/55B1F376:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C4:/55AB3ADF/5606AD61:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C5:/55AB3ADF/56048D13:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C6:/55AB3ADF/5604E07D:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C7:/55AB3ADF/5604EB81:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C8:/55AB3ADF/56049282:CustomParts:C_0805_SM".
+
+Info: Checking netlist component footprint "C9:/55AB3ADF/5604DEF3:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C10:/55AB3ADF/5604F281:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C11:/55AB3ADF/5604F3BB:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C12:/55AB3ADF/5604ECAE:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C13:/55AB3850/55AA984D:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C14:/55AB3850/567B0C07:Capacitors_SMD:c_elec_6.3x5.8".
+
+Info: Checking netlist component footprint "C15:/55AB3850/55FBBA04:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C16:/55AB3850/567B0BF4:CustomParts:C_0805_SM".
+
+Info: Checking netlist component footprint "C17:/55AB3850/56290CF9:CustomParts:C_0603_SM".
+
+Changing component "C17:/55AB3850/56290CF9" pin "1" net name from "GND" to "BUTTON".
+
+Changing component "C17:/55AB3850/56290CF9" pin "2" net name from "BUTTON" to "GND".
+
+Info: Checking netlist component footprint "C18:/55AB3850/567B0C17:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C19:/55AB3850/55AAA21C:Capacitors_SMD:c_elec_6.3x5.8".
+
+Info: Checking netlist component footprint "C20:/55AB3850/560779B3:CustomParts:C_1206_SM".
+
+Info: Checking netlist component footprint "C21:/55AB3850/567B0C2F:Capacitors_SMD:c_elec_6.3x5.8".
+
+Info: Checking netlist component footprint "C22:/55AB3850/567B0BDB:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C23:/55AB3850/567B0C27:CustomParts:C_0805_SM".
+
+Info: Checking netlist component footprint "C24:/55AB3850/55FBBA48:CustomParts:C_1206_SM".
+
+Info: Checking netlist component footprint "C25:/55AB3850/567B8999:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C26:/55AB3850/567B0C3F:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C27:/55AB3850/567B8991:CustomParts:C_0805_SM".
+
+Info: Checking netlist component footprint "C28:/55AB3850/567B0C95:CustomParts:C_1206_SM".
+
+Info: Checking netlist component footprint "C29:/55AB3850/567B15E2:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C30:/55AB3850/567B0C9D:CustomParts:C_1206_SM".
+
+Info: Checking netlist component footprint "C31:/55AB3850/567B0CA5:CustomParts:C_1206_SM".
+
+Info: Checking netlist component footprint "C32:/55AB3850/567B237E:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C33:/55F8B2F2/56053914:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C34:/55F8B2F2/55F8B394:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C35:/55F8B2F2/56053A8A:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C36:/55F8B2F2/567BDBCA:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C37:/55F8B2F2/567BDBA4:CustomParts:C_0805_SM".
+
+Info: Checking netlist component footprint "C38:/55F8B2F2/56053852:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C39:/55AB3850/569FD08D:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C40:/55AB3850/569FD0B0:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C41:/55F91B74/56052557:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C42:/55F91B74/56052E12:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C43:/55F91B74/56052E7D:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C44:/55F91B74/56052EE9:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C45:/55F91B74/56052F58:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C46:/55F91B74/56059C07:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C47:/562004BB/55A9296E:Capacitors_ThroughHole:C_Radial_D12.5_L25_P5".
+
+Info: Checking netlist component footprint "C48:/562004BB/55A9A6E2:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C49:/562004BB/5603FFF9:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C50:/562004BB/5603E72B:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C51:/562004BB/560FE5DA:CustomParts:C_0805_SM".
+
+Info: Checking netlist component footprint "C52:/55F91B74/56A157E6:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C53:/55F91B74/56DA13C3:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C54:/55F91B74/56DA1977:CustomParts:C_0603_SM".
+
+Info: Checking netlist component footprint "C55:/55AB3850/58E1BBA0:CustomParts:C_1206_SM".
+
+Adding new component "C55:/55AB3850/58E1BBA0" footprint "CustomParts:C_1206_SM".
+
+Info: Checking netlist component footprint "D1:/55AB3ADF/5605B7C0:CustomParts:Diode_0805_12_SM".
+
+Info: Checking netlist component footprint "D2:/55AB3ADF/55B40CD4:CustomParts:Diode_0805_12_SM".
+
+Info: Checking netlist component footprint "D3:/55AB3ADF/56046C18:CustomParts:Diode_0805_12_SM".
+
+Info: Checking netlist component footprint "D4:/55AB3ADF/5605B14B:CustomParts:Diode_0805_12_SM".
+
+Info: Checking netlist component footprint "D5:/55AB3ADF/5605AAE2:CustomParts:Diode_0805_12_SM".
+
+Info: Checking netlist component footprint "D6:/55AB3850/55AAA079:Diodes_SMD:SMB_Standard".
+
+Info: Checking netlist component footprint "D7:/55AB3850/55AAA128:Diodes_SMD:SMA_Standard".
+
+Info: Checking netlist component footprint "D8:/55AB3850/5607A783:CustomParts:SOD-123".
+
+Info: Checking netlist component footprint "D9:/55AB3850/56454B6A:CustomParts:Diode_0805_12_SM".
+
+Info: Checking netlist component footprint "D10:/55AB3850/567B0C5F:CustomParts:SOD-123".
+
+Info: Checking netlist component footprint "D11:/55F91B74/560D95B2:CustomParts:0805_LED".
+
+Info: Checking netlist component footprint "D12:/55F91B74/55FD725A:CustomParts:0805_LED".
+
+Info: Checking netlist component footprint "D13:/55F91B74/55FD764E:CustomParts:0805_LED".
+
+Info: Checking netlist component footprint "F1:/55AB3850/55A6CDC7:Resistors_SMD:R_1812".
+
+Info: Checking netlist component footprint "F2:/55AB3850/55C7D59B:Resistors_SMD:R_1812".
+
+Info: Checking netlist component footprint "FB1:/55AB3ADF/5604928A:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "FB2:/55AB3850/567B0BD3:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "FB3:/55F8B2F2/567BDBAC:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "FB4:/55F91B74/56059F9F:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "J1:/55AB3ADF/55B3C04C:Custom:DB-9_SMT".
+
+Info: Checking netlist component footprint "L1:/55AB3850/5607B402:CustomParts:L_4.5x4.5".
+
+Info: Checking netlist component footprint "L2:/55AB3850/567B0CB5:CustomParts:L_4.5x4.5".
+
+Info: Checking netlist component footprint "L3:/562004BB/5603E335:CustomParts:L_0603_SM".
+
+Info: Checking netlist component footprint "L4:/562004BB/55A9A7AD:CustomParts:L_0603_SM".
+
+Info: Checking netlist component footprint "P1:/55AB3ADF/55AA08F9:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "P2:/55AB3ADF/55B92A71:".
+
+Error: Cannot add new component "P2:/55AB3ADF/55B92A71" due to missing footprint "".
+
+Info: Checking netlist component footprint "P3:/55AB3850/561FEF14:CustomParts:USB-A-SMT".
+
+Info: Checking netlist component footprint "P4:/55AB3850/55C35935:Mounting_Holes:MountingHole_3mm".
+
+Info: Checking netlist component footprint "P5:/55AB3850/55C3593C:Mounting_Holes:MountingHole_3mm".
+
+Info: Checking netlist component footprint "P6:/55AB3850/55C35943:Mounting_Holes:MountingHole_3mm".
+
+Info: Checking netlist component footprint "P7:/55AB3850/55C3594A:Mounting_Holes:MountingHole_3mm".
+
+Info: Checking netlist component footprint "P8:/55AB3850/55C35919:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop".
+
+Info: Checking netlist component footprint "P9:/55AB3850/55C35920:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop".
+
+Info: Checking netlist component footprint "P10:/55AB3850/55C35927:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop".
+
+Info: Checking netlist component footprint "P11:/55AB3850/55C3592E:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop".
+
+Info: Checking netlist component footprint "P12:/55AB3850/562955D0:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom".
+
+Info: Checking netlist component footprint "P13:/55AB3850/562955D6:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom".
+
+Info: Checking netlist component footprint "P14:/55AB3850/562955DC:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom".
+
+Info: Checking netlist component footprint "P15:/55AB3850/562955E2:Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom".
+
+Info: Checking netlist component footprint "P16:/55F8B2F2/567BADA8:CustomParts:USB_Micro-B-DX4R005JJ2R1800".
+
+Info: Checking netlist component footprint "P22:/562004BB/5603F238:CustomParts:SMA-RA_142-0701-801".
+
+Info: Checking netlist component footprint "P23:/562004BB/55A9FAEF:CustomParts:SMA-RA_142-0701-801".
+
+Info: Checking netlist component footprint "P24:/562004BB/55A754E2:CustomParts:47553-1001".
+
+Info: Checking netlist component footprint "PDI1:/55F91B74/55F86EF7:Pin_Headers:Pin_Header_Straight_2x03".
+
+Info: Checking netlist component footprint "Q1:/55AB3ADF/5605E65B:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q2:/55AB3ADF/5605E101:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q3:/55AB3ADF/5605DFA8:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q4:/55AB3ADF/560643DB:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q5:/55AB3ADF/55B35B80:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q6:/55AB3ADF/55B35FD6:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q7:/55AB3ADF/560521FD:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q8:/55AB3ADF/560520AD:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q9:/55AB3ADF/56052C71:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q10:/55AB3ADF/55B7C06D:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "Q11:/55AB3850/5607ABF7:CustomParts:SOIC-8_MOS".
+
+Info: Checking netlist component footprint "Q12:/55AB3850/567B0CAD:CustomParts:SOIC-8_MOS".
+
+Info: Checking netlist component footprint "Q15:/55F91B74/55FE0BA7:CustomParts:SOT_23_123".
+
+Info: Checking netlist component footprint "R1:/55AB3ADF/55B20162:CustomParts:R_1210_SM".
+
+Info: Checking netlist component footprint "R2:/55AB3ADF/56062E2E:CustomParts:R_1210_SM".
+
+Info: Checking netlist component footprint "R3:/55AB3ADF/56068A93:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R4:/55AB3ADF/55B2AB74:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R5:/55AB3ADF/560629BB:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R6:/55AB3ADF/56062B17:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R7:/55AB3ADF/5605C4B6:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R8:/55AB3ADF/5605C5FE:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R9:/55AB3ADF/5605C791:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R10:/55AB3ADF/56060ABE:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R11:/55AB3ADF/56061D1B:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R12:/55AB3ADF/5605C36B:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R13:/55AB3ADF/5605DA36:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R14:/55AB3ADF/5605C1F3:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R15:/55AB3ADF/5605DB8E:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R16:/55AB3ADF/5605D779:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R17:/55AB3ADF/5605D8F7:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R18:/55AB3ADF/5605BA35:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R19:/55AB3ADF/55B355D8:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R20:/55AB3ADF/55B35518:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R21:/55AB3ADF/5605BC94:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R22:/55AB3ADF/55B1F414:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R23:/55AB3ADF/5605BE37:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R24:/55AB3ADF/55BD0AC0:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R25:/55AB3ADF/55BD137A:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R26:/55AB3ADF/5606AA56:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R27:/55AB3ADF/55B34CA2:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R28:/55AB3ADF/5605B2E0:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R29:/55AB3ADF/5606B363:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R30:/55AB3ADF/560537AD:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R31:/55AB3ADF/5605393B:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R32:/55AB3ADF/55AA1169:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R33:/55AB3ADF/5655F6EA:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R34:/55AB3ADF/56058495:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R35:/55AB3ADF/5605879F:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R36:/55AB3ADF/56059C7F:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R37:/55AB3850/56081053:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R38:/55AB3850/5608243D:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R39:/55AB3850/5608085B:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R40:/55AB3850/5608BED0:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R41:/55AB3850/56081C97:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R42:/55AB3850/560811F0:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R43:/55AB3850/56081A63:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R44:/55AB3850/56081EB1:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R45:/55AB3850/567B0CC5:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R46:/55AB3850/5644A6DA:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R47:/55AB3850/567B0CCD:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R51:/55AB3850/5627A597:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R52:/55AB3850/5627A58F:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R53:/55F8B2F2/5627871B:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R54:/55F8B2F2/56278723:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R55:/55F8B2F2/55F89B1E:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R56:/55F8B2F2/567BBCB0:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R57:/55F8B2F2/5627F762:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R58:/55F8B2F2/5627F427:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R59:/55F8B2F2/567BBCEF:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R61:/55F91B74/560D95D8:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R63:/55F91B74/5605C9A1:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R66:/55F91B74/562AAD52:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R67:/55F91B74/5605AFDD:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R69:/562004BB/5603C783:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R70:/562004BB/55A77FC7:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "R71:/562004BB/5603C7FB:CustomParts:R_0603_sm".
+
+Info: Checking netlist component footprint "SW1:/55AB3ADF/55F7E47B:CustomParts:SW_SPST_FSMSM_SM".
+
+Info: Checking netlist component footprint "SW2:/55AB3850/5600CE81:CustomParts:PTS645VK58-2-LFS".
+
+Info: Checking netlist component footprint "U1:/55AB3ADF/55B2A9F7:Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "U2:/55AB3ADF/55C1089B:TO_SOT_Packages_SMD:SOT-23-6".
+
+Info: Checking netlist component footprint "U3:/55AB3ADF/5604541F:TO_SOT_Packages_SMD:SOT-23-6".
+
+Info: Checking netlist component footprint "U4:/55AB3ADF/55B33F41:TO_SOT_Packages_SMD:SOT-223".
+
+Info: Checking netlist component footprint "U5:/55AB3ADF/55B1E71A:Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "U6:/55AB3ADF/55A9EA92:Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "U7:/55AB3850/5643FA88:TO_SOT_Packages_SMD:SOT-23-6".
+
+Info: Checking netlist component footprint "U8:/55AB3850/5607E4F1:TO_SOT_Packages_SMD:SOT-23-5".
+
+Info: Checking netlist component footprint "U9:/55AB3850/567B0CBD:TO_SOT_Packages_SMD:SOT-23-5".
+
+Info: Checking netlist component footprint "U10:/55AB3850/56A695E2:TO_SOT_Packages_SMD:SOT-23-6".
+
+Info: Checking netlist component footprint "U11:/55AB3850/567B8989:TO_SOT_Packages_SMD:SOT-23-5".
+
+Info: Checking netlist component footprint "U12:/55AB3850/567B15D2:TO_SOT_Packages_SMD:SOT-23-5".
+
+Info: Checking netlist component footprint "U13:/55AB3850/569FD086:TO_SOT_Packages_SMD:SOT-23-5".
+
+Info: Checking netlist component footprint "U16:/55F8B2F2/55F88FA9:Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm".
+
+Info: Checking netlist component footprint "U17:/55F8B2F2/567BDB8D:CustomParts:LGA-14_5x3mm".
+
+Info: Checking netlist component footprint "U18:/55F91B74/55FA3B36:Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm".
+
+Info: Checking netlist component footprint "U20:/55F91B74/55F86EE3:Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm".
+
+Info: Checking netlist component footprint "U22:/562004BB/55A744B0:CustomParts:SIM5320".
+
+Info: Checking netlist component footprint "U23:/562004BB/56099894:TO_SOT_Packages_SMD:SOT-23-6".
+
+Info: Checking netlist component footprint "W1:/562004BB/55B87E9D:".
+
+Error: Cannot add new component "W1:/562004BB/55B87E9D" due to missing footprint "".
+
+Info: Checking netlist component footprint "X1:/55AB3ADF/55B75E65:Custom:AWSCR".
+
+Info: Checking netlist component footprint "X2:/55F8B2F2/56092E15:Custom:AWSCR".
+
+Info: Checking netlist component footprint "X3:/55F91B74/56DA0FEF:Custom Parts:C_1206_SM".
+
+Error: Component 'P8' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop'
+
+Error: Component 'P9' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop'
+
+Error: Component 'P10' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop'
+
+Error: Component 'P11' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop'
+
+Error: Component 'P12' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom'
+
+Error: Component 'P13' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom'
+
+Error: Component 'P14' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom'
+
+Error: Component 'P15' pad '1' not found in footprint 'Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom'
+
