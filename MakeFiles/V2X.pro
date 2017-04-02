@@ -1,4 +1,4 @@
-update=3/7/2016 10:52:52 AM
+update=4/2/2017 11:10:12 AM
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,8 +6,6 @@ version=1
 NetIExt=net
 [cvpcb/equfiles]
 EquName1=${KIPRJMOD}/../../../../../kicad-library/modules/smd_active.equ
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -119,4 +117,7 @@ LibName75=video
 LibName76=Xicor
 LibName77=xilinx
 LibName78=Zilog
-LibName79=C:/Users/jbanks2/Documents/Projects/Kicad_Custom_Parts/CUSTOM_KICAD_PART
+LibName79=C:/Users/Jesse/Documents/JopelDesigns/Projects/Kicad_Custom_Parts/CUSTOM_KICAD_PART
+LibName80=C:/Users/Jesse/Documents/JopelDesigns/Projects/Kicad_Custom_Parts/sim5320_KICAD_PART
+[general]
+version=1

@@ -78,6 +78,7 @@ LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
 LIBS:CUSTOM_KICAD_PART
+LIBS:sim5320_KICAD_PART
 LIBS:V2X-cache
 EELAYER 25 0
 EELAYER END
@@ -157,9 +158,7 @@ Wire Wire Line
 	1800 1000 1900 1000
 Connection ~ 1800 1000
 Wire Wire Line
-	2400 1000 2500 1000
-Wire Wire Line
-	2500 1000 2600 1000
+	2400 1000 2600 1000
 Wire Wire Line
 	2500 1000 2500 1050
 Connection ~ 2500 1000
@@ -371,9 +370,7 @@ $EndComp
 Text GLabel 1600 2300 0    60   Input ~ 0
 5V0_EN
 Wire Wire Line
-	2500 2300 2800 2300
-Wire Wire Line
-	2800 2300 3050 2300
+	2500 2300 3050 2300
 Wire Wire Line
 	3050 2300 3050 2150
 Connection ~ 2800 2300
@@ -403,9 +400,7 @@ $EndComp
 Wire Wire Line
 	2800 2700 2800 2800
 Wire Wire Line
-	2700 2800 2800 2800
-Wire Wire Line
-	2800 2800 2900 2800
+	2700 2800 2900 2800
 Connection ~ 2800 2800
 $Comp
 L C C24
@@ -420,17 +415,13 @@ F 4 "603-CC126KKX7R7BB106" H 3700 2950 60  0001 C CNN "Mouse PN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 2800 3500 2800
-Wire Wire Line
-	3500 2800 3700 2800
+	3400 2800 3700 2800
 Wire Wire Line
 	3700 2800 3700 2650
 Wire Wire Line
 	3500 3050 3500 2800
 Wire Wire Line
-	1950 3050 2050 3050
-Wire Wire Line
-	2050 3050 3500 3050
+	1950 3050 3500 3050
 Connection ~ 3500 2800
 Wire Wire Line
 	1950 2800 2050 2800
@@ -440,13 +431,9 @@ Connection ~ 2050 3050
 Wire Wire Line
 	1650 3050 1600 3050
 Wire Wire Line
-	1600 3050 1600 2800
+	1600 2800 1600 3050
 Wire Wire Line
-	1500 2800 1550 2800
-Wire Wire Line
-	1550 2800 1600 2800
-Wire Wire Line
-	1600 2800 1650 2800
+	1500 2800 1650 2800
 Connection ~ 1600 2800
 Wire Wire Line
 	1550 2800 1550 2500
@@ -518,11 +505,7 @@ F 3 "" H 2850 4800 60  0000 C CNN
 $EndComp
 Connection ~ 5200 4000
 Wire Wire Line
-	2500 4300 2850 4300
-Wire Wire Line
-	2850 4300 3100 4300
-Wire Wire Line
-	3100 4300 3700 4300
+	2500 4300 3700 4300
 Text Notes 950  6150 0    69   ~ 0
 Button starts the 4V1 -> 3V3 supplies\nMust hold 4V1_EN high to stay on\nBUTTON is input signal once running
 Text GLabel 3050 2150 1    60   Input ~ 0
@@ -877,9 +860,7 @@ $EndComp
 Wire Wire Line
 	5200 4000 5200 4050
 Wire Wire Line
-	4700 4000 4750 4000
-Wire Wire Line
-	4750 4000 4800 4000
+	4700 4000 4800 4000
 Wire Wire Line
 	4750 4000 4750 4150
 Wire Wire Line
@@ -921,23 +902,19 @@ F 3 "" H 5500 2750 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5500 2450 5550 2450
-Wire Wire Line
-	5550 2450 5600 2450
+	5500 2450 5600 2450
 Wire Wire Line
 	5550 2450 5550 2600
 Wire Wire Line
 	5550 2600 5500 2600
 Connection ~ 5550 2450
 Wire Wire Line
-	4200 2300 4200 2450
-Wire Wire Line
-	4200 2450 4200 2600
+	4200 2300 4200 2600
 Wire Wire Line
 	4200 2450 4500 2450
 Connection ~ 4200 2450
 Wire Wire Line
-	3400 4000 3700 4000
+	3200 4000 3700 4000
 $Comp
 L FILTER FB2
 U 1 1 567B0BD3
@@ -975,15 +952,7 @@ F 3 "" H 3350 7350 60  0000 C CNN
 $EndComp
 Connection ~ 3350 7000
 Wire Wire Line
-	2900 7000 3050 7000
-Wire Wire Line
-	3050 7000 3350 7000
-Wire Wire Line
-	3350 7000 3650 7000
-Wire Wire Line
-	3650 7000 4100 7000
-Wire Wire Line
-	4100 7000 4650 7000
+	2900 7000 4650 7000
 $Comp
 L GND #PWR054
 U 1 1 567B0BEB
@@ -1026,15 +995,9 @@ Wire Wire Line
 Wire Wire Line
 	3650 7050 3650 7000
 Wire Wire Line
-	1500 6900 1500 7000
+	1500 6900 1500 7050
 Wire Wire Line
-	1500 7000 1500 7050
-Wire Wire Line
-	1500 7000 1800 7000
-Wire Wire Line
-	1800 7000 2100 7000
-Wire Wire Line
-	2100 7000 2200 7000
+	1500 7000 2200 7000
 Wire Wire Line
 	1800 7050 1800 7000
 Connection ~ 1800 7000
@@ -1165,9 +1128,7 @@ $EndComp
 Text GLabel 9600 4650 1    60   Input ~ 0
 4V1
 Wire Wire Line
-	8150 4300 8450 4300
-Wire Wire Line
-	8450 4300 8700 4300
+	8150 4300 8700 4300
 Wire Wire Line
 	8700 4300 8700 4150
 Connection ~ 8450 4300
@@ -1209,22 +1170,14 @@ $EndComp
 Wire Wire Line
 	8450 4700 8450 4800
 Wire Wire Line
-	8350 4800 8450 4800
-Wire Wire Line
-	8450 4800 8550 4800
+	8350 4800 8550 4800
 Connection ~ 8450 4800
 Wire Wire Line
-	9050 4800 9150 4800
-Wire Wire Line
-	9150 4800 9350 4800
-Wire Wire Line
-	9350 4800 9600 4800
+	9050 4800 9600 4800
 Wire Wire Line
 	9150 5050 9150 4800
 Wire Wire Line
-	7600 5050 7700 5050
-Wire Wire Line
-	7700 5050 9150 5050
+	7600 5050 9150 5050
 Connection ~ 9150 4800
 Wire Wire Line
 	7600 4800 7700 4800
@@ -1234,13 +1187,9 @@ Connection ~ 7700 5050
 Wire Wire Line
 	7300 5050 7250 5050
 Wire Wire Line
-	7250 5050 7250 4800
+	7250 4800 7250 5050
 Wire Wire Line
-	7150 4800 7200 4800
-Wire Wire Line
-	7200 4800 7250 4800
-Wire Wire Line
-	7250 4800 7300 4800
+	7150 4800 7300 4800
 Connection ~ 7250 4800
 Wire Wire Line
 	7200 4800 7200 4500
@@ -1396,11 +1345,7 @@ F 4 "810-C1608X7R1E104K" H 8600 6250 60  0001 C CNN "Mouse PN"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 5800 8600 5900
-Wire Wire Line
-	8600 5900 8600 6050
-Wire Wire Line
-	8600 6050 8600 6100
+	8600 5800 8600 6100
 Wire Wire Line
 	8600 6050 8700 6050
 Wire Wire Line
@@ -1410,9 +1355,7 @@ Text GLabel 8600 5800 1    60   Input ~ 0
 4V1
 Connection ~ 8600 5900
 Wire Wire Line
-	9700 5800 9700 5900
-Wire Wire Line
-	9700 5900 9700 6100
+	9700 5800 9700 6100
 Wire Wire Line
 	9700 5900 9600 5900
 Connection ~ 9700 5900
@@ -1464,11 +1407,7 @@ F 4 "810-C1608X7R1E104K" H 9700 6250 60  0001 C CNN "Mouse PN"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 4000 5200 4000
-Wire Wire Line
-	5200 4000 5450 4000
-Wire Wire Line
-	5450 4000 5600 4000
+	5100 4000 5600 4000
 Wire Wire Line
 	5450 4000 5450 4300
 Wire Wire Line
@@ -1510,16 +1449,12 @@ F 4 "810-C1608X7R1E104K" H 4100 7200 60  0001 C CNN "Mouse PN"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 6900 4100 7000
-Wire Wire Line
-	4100 7000 4100 7050
+	4100 6900 4100 7050
 Text GLabel 4100 6900 1    60   Input ~ 0
 4V1F1
 Connection ~ 4100 7000
 Wire Wire Line
-	5650 6900 5650 7000
-Wire Wire Line
-	5650 7000 5650 7050
+	5650 6900 5650 7050
 Wire Wire Line
 	5650 7000 5550 7000
 Connection ~ 5650 7000
@@ -1588,16 +1523,12 @@ F 4 "810-C1608X7R1E104K" H 6650 6250 60  0001 C CNN "Mouse PN"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 5800 6650 5900
-Wire Wire Line
-	6650 5900 6650 6100
+	6650 5800 6650 6100
 Wire Wire Line
 	6650 5900 7100 5900
 Connection ~ 6650 5900
 Wire Wire Line
-	8100 5800 8100 5900
-Wire Wire Line
-	8100 5900 8100 6100
+	8100 5800 8100 6100
 Wire Wire Line
 	8100 5900 8000 5900
 Connection ~ 8100 5900
@@ -1670,15 +1601,11 @@ Wire Wire Line
 	3100 4300 3100 4500
 Connection ~ 3100 4300
 Wire Wire Line
-	3100 4800 3100 4900
-Wire Wire Line
-	3100 4900 3100 5000
+	3100 4800 3100 5000
 Wire Wire Line
 	3200 4900 3100 4900
 Connection ~ 3100 4900
 Connection ~ 3400 4000
-Wire Wire Line
-	3200 4000 3400 4000
 Wire Wire Line
 	3400 4000 3400 4150
 $EndSCHEMATC
