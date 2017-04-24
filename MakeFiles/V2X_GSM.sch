@@ -78,6 +78,7 @@ LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
 LIBS:CUSTOM_KICAD_PART
+LIBS:sim5320_KICAD_PART
 LIBS:V2X-cache
 EELAYER 25 0
 EELAYER END
@@ -411,7 +412,7 @@ F 0 "C47" H 5225 3700 50  0000 L CNN
 F 1 "0.1F" H 5225 3500 50  0000 L CNN
 F 2 "Capacitors_ThroughHole:C_Radial_D12.5_L25_P5" H 5200 3600 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/87/Bus_Elx_DS_4327_KR_Series-479311.pdf" H 5200 3600 60  0001 C CNN
-F 4 "504-KR-5R5C104-R" H 5200 3600 60  0001 C CNN "Mouser PN"
+F 4 "504-KR-5R5C104-R" H 5200 3600 60  0001 C CNN "Mouse PN"
 	1    5200 3600
 	1    0    0    -1  
 $EndComp
@@ -435,8 +436,8 @@ P 7050 3350
 F 0 "C48" H 7075 3450 50  0000 L CNN
 F 1 "56P" H 7075 3250 50  0000 L CNN
 F 2 "CustomParts:C_0603_SM" H 7088 3200 30  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/40/useries-37712.pdf" H 7050 3350 60  0001 C CNN
-F 4 "581-08052U560G" H 7050 3350 60  0001 C CNN "Mouse PN"
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 7050 3350 60  0001 C CNN
+F 4 "77-VJ0603A560JXACBC" H 7050 3350 60  0001 C CNN "Mouse PN"
 	1    7050 3350
 	-1   0    0    -1  
 $EndComp
@@ -577,9 +578,8 @@ P 4150 2850
 F 0 "U22" H 2150 4450 60  0000 C CNN
 F 1 "SIM5320" H 3400 3150 60  0000 C CNN
 F 2 "CustomParts:SIM5320" H 2800 3650 60  0001 C CNN
-F 3 "http://www.simcom.ee/modules/wcdma-hspa/sim5320/" H 2800 3650 60  0001 C CNN
-F 4 "#" H 4150 2850 60  0001 C CNN "Mouse PN"
-F 5 "SIM5320A" H 4150 2850 60  0001 C CNN "AliExpress PN"
+F 3 "https://www.aliexpress.com/item/Original-SMT-type-WCDMA-module-SIM5320A/477453149.html" H 2800 3650 60  0001 C CNN
+F 4 "AliExpressOrder" H 4150 2850 60  0001 C CNN "Mouse PN"
 	1    4150 2850
 	1    0    0    -1  
 $EndComp
@@ -755,7 +755,7 @@ U 1 1 560FE5DA
 P 7300 3950
 F 0 "C51" H 7325 4050 50  0000 L CNN
 F 1 "150p" H 7325 3850 50  0000 L CNN
-F 2 "CustomParts:C_0603_SM" H 7338 3800 30  0001 C CNN
+F 2 "CustomParts:C_0805_SM" H 7338 3800 30  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/427/highq-222791.pdf" H 7300 3950 60  0001 C CNN
 F 4 "77-VJ0805Q151JXAAC" H 7300 3950 60  0001 C CNN "Mouse PN"
 	1    7300 3950
