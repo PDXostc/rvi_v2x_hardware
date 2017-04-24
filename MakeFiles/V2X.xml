@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:/Users/Jesse/Documents/JopelDesigns/Projects/rvi_v2x_hardware/MakeFiles/V2X.sch</source>
-    <date>4/2/2017 12:10:12 PM</date>
+    <date>4/21/2017 1:34:58 PM</date>
     <tool>Eeschema 4.0.2-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -88,6 +88,9 @@
       <value>STN1110</value>
       <footprint>Housings_SOIC:SOIC-28_7.5x17.9mm_Pitch1.27mm</footprint>
       <datasheet>https://www.scantool.net/dev-tools/stn11xx/stn1110.html?utm_source=obdsol&amp;utm_medium=btn&amp;utm_campaign=stn1110-order</datasheet>
+      <fields>
+        <field name="Mouse PN">ScacntoolOrder</field>
+      </fields>
       <libsource lib="V2X-cache" part="STN1110-RESCUE-V2X"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
       <tstamp>55A9EA92</tstamp>
@@ -95,9 +98,8 @@
     <comp ref="P1">
       <value>NVM_RST</value>
       <footprint>CustomParts:R_0603_sm</footprint>
-      <datasheet>http://www.mouser.com/ds/2/276/0022285023_PCB_HEADERS-159058.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">538-22-28-5023</field>
+        <field name="Mouse PN">DNS</field>
       </fields>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -229,7 +231,7 @@
       <footprint>CustomParts:SOT_23_123</footprint>
       <datasheet>http://www.mouser.com/ds/2/395/MMBT3904_D14-536637.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">821-MMBT3904</field>
+        <field name="Mouse PN">863-SMMBT3904LT1G</field>
       </fields>
       <libsource lib="device" part="Q_NPN_BEC"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -240,7 +242,7 @@
       <footprint>CustomParts:SOT_23_123</footprint>
       <datasheet>http://www.mouser.com/ds/2/115/ds30059-15980.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">621-MMBT3906-F</field>
+        <field name="Mouse PN">863-MMBT3906LT1G</field>
       </fields>
       <libsource lib="device" part="Q_PNP_BEC"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -284,7 +286,7 @@
       <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
       <datasheet>http://www.mouser.com/ds/2/389/CD00002055-250307.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">511-ESDA19SC6</field>
+        <field name="Mouse PN">511-ESDA25SC6</field>
       </fields>
       <libsource lib="CUSTOM_KICAD_PART" part="ESDAxxSC6"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -326,6 +328,9 @@
     <comp ref="P2">
       <value>DB-9 to OBD2</value>
       <datasheet>http://www.amazon.com/Adapter-Cable--Connecting-Diagnostic-Interface-Compliant/dp/B007UKTW8E/ref=sr_1_1?ie=UTF8&amp;qid=1443117694&amp;sr=8-1</datasheet>
+      <fields>
+        <field name="Mouse PN">AmazonOrder</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X01"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
       <tstamp>55B92A71</tstamp>
@@ -346,7 +351,7 @@
       <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
       <datasheet>http://www.mouser.com/ds/2/389/CD00002055-250307.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">511-ESDA19SC6</field>
+        <field name="Mouse PN">511-ESDA25SC6</field>
       </fields>
       <libsource lib="CUSTOM_KICAD_PART" part="ESDAxxSC6"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -379,7 +384,7 @@
       <footprint>CustomParts:C_0603_SM</footprint>
       <datasheet>http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">603-CC603KRX7R7BB105</field>
+        <field name="Mouse PN">81-GRM188R71C105KA2J</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -390,7 +395,7 @@
       <footprint>CustomParts:C_0805_SM</footprint>
       <datasheet>http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">581-12063C475KAT2A</field>
+        <field name="Mouse PN">81-GRM21BR71C475KA73</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -412,7 +417,7 @@
       <footprint>CustomParts:C_0603_SM</footprint>
       <datasheet>http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">81-GRM188R71C105KA2J</field>
+        <field name="Mouse PN">581-06036C105MAT2A</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -456,7 +461,7 @@
       <footprint>CustomParts:C_0603_SM</footprint>
       <datasheet>http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">81-GRM188R71C105KA2J</field>
+        <field name="Mouse PN">581-06036C105MAT2A</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -467,7 +472,7 @@
       <footprint>CustomParts:C_0603_SM</footprint>
       <datasheet>http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">81-GRM188R71C105KA2J</field>
+        <field name="Mouse PN">581-06036C105MAT2A</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -742,7 +747,7 @@
       <footprint>CustomParts:SOT_23_123</footprint>
       <datasheet>http://www.mouser.com/ds/2/395/MMBT3904_D14-536637.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">821-MMBT3904</field>
+        <field name="Mouse PN">863-SMMBT3904LT1G</field>
       </fields>
       <libsource lib="device" part="Q_NPN_BEC"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -753,7 +758,7 @@
       <footprint>CustomParts:SOT_23_123</footprint>
       <datasheet>http://www.mouser.com/ds/2/395/MMBT3904_D14-536637.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">821-MMBT3904</field>
+        <field name="Mouse PN">863-SMMBT3904LT1G</field>
       </fields>
       <libsource lib="device" part="Q_NPN_BEC"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -764,7 +769,7 @@
       <footprint>CustomParts:SOT_23_123</footprint>
       <datasheet>http://www.mouser.com/ds/2/395/MMBT3904_D14-536637.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">821-MMBT3904</field>
+        <field name="Mouse PN">863-SMMBT3904LT1G</field>
       </fields>
       <libsource lib="device" part="Q_NPN_BEC"/>
       <sheetpath names="/V2X OBD Sub/" tstamps="/55AB3ADF/"/>
@@ -958,7 +963,7 @@
       <tstamp>55AAA21C</tstamp>
     </comp>
     <comp ref="F2">
-      <value>1A</value>
+      <value>2A</value>
       <footprint>Resistors_SMD:R_1812</footprint>
       <datasheet>http://www.mouser.com/ds/2/643/0ZCC-532535.pdf</datasheet>
       <fields>
@@ -1276,6 +1281,9 @@
       <value>FDC6326L</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
       <datasheet>http://www.mouser.com/ds/2/149/FDC6326L-372133.pdf</datasheet>
+      <fields>
+        <field name="Mouse PN">512-FDC6326L</field>
+      </fields>
       <libsource lib="CUSTOM_KICAD_PART" part="Si1865DDL"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
       <tstamp>5643FA88</tstamp>
@@ -1329,7 +1337,7 @@
       <footprint>CustomParts:C_0805_SM</footprint>
       <datasheet>http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">581-12063C475KAT2A</field>
+        <field name="Mouse PN">81-GRM21BR71A475KA3K</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
@@ -1338,9 +1346,9 @@
     <comp ref="C14">
       <value>220U</value>
       <footprint>Capacitors_SMD:c_elec_6.3x5.8</footprint>
-      <datasheet>http://www.mouser.com/ds/2/445/875105244013-540575.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/315/AAB8000C179-944382.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">710-875105244013</field>
+        <field name="Mouse PN">667-10SVPE220M</field>
       </fields>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
@@ -1362,7 +1370,7 @@
       <footprint>CustomParts:C_0805_SM</footprint>
       <datasheet>http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">581-12063C475KAT2A</field>
+        <field name="Mouse PN">81-GRM21BR71A475KA3K</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
@@ -1371,9 +1379,9 @@
     <comp ref="C21">
       <value>220U</value>
       <footprint>Capacitors_SMD:c_elec_6.3x5.8</footprint>
-      <datasheet>http://www.mouser.com/ds/2/445/875105244013-540575.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/315/AAB8000C179-944382.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">710-875105244013</field>
+        <field name="Mouse PN">667-10SVPE220M</field>
       </fields>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
@@ -1492,9 +1500,9 @@
     <comp ref="U12">
       <value>TLV70012DCK</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
-      <datasheet>http://www.mouser.com/ds/2/405/tlv700-558265.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/389/DM00236470-948159.pdf</datasheet>
       <fields>
-        <field name="Mouse">TLV70012DCK</field>
+        <field name="Mouse PN">511-LDK320M33R</field>
       </fields>
       <libsource lib="regul" part="TLV70012DCK"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
@@ -1525,9 +1533,9 @@
     <comp ref="U11">
       <value>TLV70012DCK</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
-      <datasheet>http://www.mouser.com/ds/2/405/tlv700-558265.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/389/DM00236470-948159.pdf</datasheet>
       <fields>
-        <field name="Mouse">TLV70012DCK</field>
+        <field name="Mouse PN">511-LDK320M33R</field>
       </fields>
       <libsource lib="regul" part="TLV70012DCK"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
@@ -1538,7 +1546,7 @@
       <footprint>CustomParts:C_0805_SM</footprint>
       <datasheet>http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">581-12063C475KAT2A</field>
+        <field name="Mouse PN">81-GRM21BR71A475KA3K</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
@@ -1558,9 +1566,9 @@
     <comp ref="U13">
       <value>TLV70012DCK</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
-      <datasheet>http://www.mouser.com/ds/2/405/tlv700-558265.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/389/DM00236470-948159.pdf</datasheet>
       <fields>
-        <field name="Mouse">TLV70012DCK</field>
+        <field name="Mouse PN">511-LDK320M33R</field>
       </fields>
       <libsource lib="regul" part="TLV70012DCK"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
@@ -1592,6 +1600,9 @@
       <value>FDC6326L</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
       <datasheet>http://www.mouser.com/ds/2/149/FDC6326L-372133.pdf</datasheet>
+      <fields>
+        <field name="Mouse PN">512-FDC6326L</field>
+      </fields>
       <libsource lib="CUSTOM_KICAD_PART" part="Si1865DDL"/>
       <sheetpath names="/V2X Power Sub/" tstamps="/55AB3850/"/>
       <tstamp>56A695E2</tstamp>
@@ -1634,7 +1645,7 @@
       <footprint>CustomParts:C_0603_SM</footprint>
       <datasheet>http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">81-GRM188R71C105KA2J</field>
+        <field name="Mouse PN">581-06036C105MAT2A</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Accy Sub/" tstamps="/55F8B2F2/"/>
@@ -1667,7 +1678,7 @@
       <footprint>CustomParts:C_0603_SM</footprint>
       <datasheet>http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">81-GRM188R71C105KA2J</field>
+        <field name="Mouse PN">581-06036C105MAT2A</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Accy Sub/" tstamps="/55F8B2F2/"/>
@@ -1731,9 +1742,9 @@
     <comp ref="P16">
       <value>USB_u</value>
       <footprint>CustomParts:USB_Micro-B-DX4R005JJ2R1800</footprint>
-      <datasheet>http://www.mouser.com/ds/2/206/MB-0187-2E_DX4-221395.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/185/ZX_catalog-939768.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">656-DX4R005JJ2R1800</field>
+        <field name="Mouse PN">798-ZX62D-B-5PA830</field>
       </fields>
       <libsource lib="conn" part="USB_OTG"/>
       <sheetpath names="/V2X Accy Sub/" tstamps="/55F8B2F2/"/>
@@ -1766,7 +1777,7 @@
       <footprint>CustomParts:LGA-14_5x3mm</footprint>
       <datasheet>http://www.mouser.com/ds/2/609/ADXL345-246395.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">584-ADXL345BCCZ-R7</field>
+        <field name="Mouse PN">584-ADXL345BCCZ</field>
       </fields>
       <libsource lib="CUSTOM_KICAD_PART" part="ADXL345"/>
       <sheetpath names="/V2X Accy Sub/" tstamps="/55F8B2F2/"/>
@@ -1777,7 +1788,7 @@
       <footprint>CustomParts:C_0805_SM</footprint>
       <datasheet>http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">581-12063C475KAT2A</field>
+        <field name="Mouse PN">81-GRM21BR71A475KA3K</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Accy Sub/" tstamps="/55F8B2F2/"/>
@@ -1920,7 +1931,7 @@
       <footprint>CustomParts:C_0603_SM</footprint>
       <datasheet>http://www.mouser.com/ds/2/447/UPY-GPHC_X7R_6.3V-to-50V_8-12304.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">81-GRM188R71C105KA2J</field>
+        <field name="Mouse PN">581-06036C105MAT2A</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Power Sequencer/" tstamps="/55F91B74/"/>
@@ -1953,7 +1964,7 @@
       <footprint>CustomParts:R_0603_sm</footprint>
       <datasheet>http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">71-CRCW0603-220-E3</field>
+        <field name="Mouse PN">667-ERJ-3GEYJ221V</field>
       </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/V2X Power Sequencer/" tstamps="/55F91B74/"/>
@@ -2019,7 +2030,7 @@
       <footprint>Custom Parts:C_1206_SM</footprint>
       <datasheet>http://www.mouser.com/ds/2/360/SC-32P_Leaflet_r_newest-541780.pdf</datasheet>
       <fields>
-        <field name="Mouser">815-S07AIG-32.76891T</field>
+        <field name="Mouse PN">815-S07AIG-32.76891T</field>
       </fields>
       <libsource lib="device" part="Crystal_Small"/>
       <sheetpath names="/V2X Power Sequencer/" tstamps="/55F91B74/"/>
@@ -2028,10 +2039,9 @@
     <comp ref="C53">
       <value>9p</value>
       <footprint>CustomParts:C_0603_SM</footprint>
-      <datasheet>http://www.mouser.com/ds/2/400/lcc_commercial_general_en-837201.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/281/c02e-2905.pdf</datasheet>
       <fields>
-        <field name="Mouser">DNS</field>
-        <field name="Mouse PN">810-C1608C0G1H090C</field>
+        <field name="Mouse PN">81-GRM1885C1H9R0DA1D</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Power Sequencer/" tstamps="/55F91B74/"/>
@@ -2040,10 +2050,9 @@
     <comp ref="C54">
       <value>9p</value>
       <footprint>CustomParts:C_0603_SM</footprint>
-      <datasheet>http://www.mouser.com/ds/2/400/lcc_commercial_general_en-837201.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/281/c02e-2905.pdf</datasheet>
       <fields>
-        <field name="Mouser">DNS</field>
-        <field name="Mouse PN">810-C1608C0G1H090C</field>
+        <field name="Mouse PN">81-GRM1885C1H9R0DA1D</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/V2X Power Sequencer/" tstamps="/55F91B74/"/>
@@ -2076,7 +2085,7 @@
       <footprint>Capacitors_ThroughHole:C_Radial_D12.5_L25_P5</footprint>
       <datasheet>http://www.mouser.com/ds/2/87/Bus_Elx_DS_4327_KR_Series-479311.pdf</datasheet>
       <fields>
-        <field name="Mouser PN">504-KR-5R5C104-R</field>
+        <field name="Mouse PN">504-KR-5R5C104-R</field>
       </fields>
       <libsource lib="device" part="CP1"/>
       <sheetpath names="/GSM+GPS/" tstamps="/562004BB/"/>
@@ -2085,9 +2094,9 @@
     <comp ref="C48">
       <value>56P</value>
       <footprint>CustomParts:C_0603_SM</footprint>
-      <datasheet>http://www.mouser.com/ds/2/40/useries-37712.pdf</datasheet>
+      <datasheet>http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf</datasheet>
       <fields>
-        <field name="Mouse PN">581-08052U560G</field>
+        <field name="Mouse PN">77-VJ0603A560JXACBC</field>
       </fields>
       <libsource lib="device" part="C"/>
       <sheetpath names="/GSM+GPS/" tstamps="/562004BB/"/>
@@ -2128,10 +2137,9 @@
     <comp ref="U22">
       <value>SIM5320</value>
       <footprint>CustomParts:SIM5320</footprint>
-      <datasheet>http://www.simcom.ee/modules/wcdma-hspa/sim5320/</datasheet>
+      <datasheet>https://www.aliexpress.com/item/Original-SMT-type-WCDMA-module-SIM5320A/477453149.html</datasheet>
       <fields>
-        <field name="Mouse PN">#</field>
-        <field name="AliExpress PN">SIM5320A</field>
+        <field name="Mouse PN">AliExpressOrder</field>
       </fields>
       <libsource lib="CUSTOM_KICAD_PART" part="SIM5320"/>
       <sheetpath names="/GSM+GPS/" tstamps="/562004BB/"/>
@@ -3025,29 +3033,29 @@
     <library logical="V2X-rescue">
       <uri>C:\Users\Jesse\Documents\JopelDesigns\Projects\rvi_v2x_hardware\MakeFiles\V2X-rescue.lib</uri>
     </library>
-    <library logical="regul">
-      <uri>C:\Program Files\KiCad\share\kicad\library\regul.lib</uri>
-    </library>
     <library logical="74xx">
       <uri>C:\Program Files\KiCad\share\kicad\library\74xx.lib</uri>
+    </library>
+    <library logical="atmel">
+      <uri>C:\Program Files\KiCad\share\kicad\library\atmel.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="interface">
+      <uri>C:\Program Files\KiCad\share\kicad\library\interface.lib</uri>
+    </library>
+    <library logical="regul">
+      <uri>C:\Program Files\KiCad\share\kicad\library\regul.lib</uri>
     </library>
     <library logical="CUSTOM_KICAD_PART">
       <uri>C:\Users\Jesse\Documents\JopelDesigns\Projects\Kicad_Custom_Parts\CUSTOM_KICAD_PART.lib</uri>
     </library>
     <library logical="V2X-cache">
       <uri>C:\Users\Jesse\Documents\JopelDesigns\Projects\rvi_v2x_hardware\MakeFiles\V2X-cache.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
-    </library>
-    <library logical="conn">
-      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
-    </library>
-    <library logical="interface">
-      <uri>C:\Program Files\KiCad\share\kicad\library\interface.lib</uri>
-    </library>
-    <library logical="atmel">
-      <uri>C:\Program Files\KiCad\share\kicad\library\atmel.lib</uri>
     </library>
   </libraries>
   <nets>

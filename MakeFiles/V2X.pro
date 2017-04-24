@@ -1,4 +1,4 @@
-update=4/2/2017 11:10:12 AM
+update=4/20/2017 1:31:33 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,16 +6,6 @@ version=1
 NetIExt=net
 [cvpcb/equfiles]
 EquName1=${KIPRJMOD}/../../../../../kicad-library/modules/smd_active.equ
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=69
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -121,3 +111,13 @@ LibName79=C:/Users/Jesse/Documents/JopelDesigns/Projects/Kicad_Custom_Parts/CUST
 LibName80=C:/Users/Jesse/Documents/JopelDesigns/Projects/Kicad_Custom_Parts/sim5320_KICAD_PART
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=69
